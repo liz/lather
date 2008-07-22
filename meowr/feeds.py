@@ -11,7 +11,7 @@ class LatestArtclesFeed(Feed):
 	description			= "Latest articles posted to Lather Rinse Repeat"
 	item_copyright		= "Liz"
 	item_author_name	= "Liz"
-	link				= "/feeds/articles/"
+	link				= "/feeds/all/"
 	title				= "Lather Rinse Repeat"
 	
 	def items(self):
