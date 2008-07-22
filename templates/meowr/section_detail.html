@@ -32,7 +32,7 @@
 {% ifchanged %}
 <li class="month_title_small"><a href="/{{ object.pub_date|date:"Y" }}/{{ object.pub_date|date:"n" }}/">{{ object.pub_date|date:"F Y" }}</a></li>
 {% endifchanged %}
-<li>{{ object.pub_date|date:"j" }}: <a href="{{ object.get_absolute_url }}">{{ object.title|cut:"*Cinema -- "|cut:"*Swag -- " }}</a></li>
+<li>{{ object.pub_date|date:"d" }}: <a href="{{ object.get_absolute_url }}">{{ object.title|cut:"*Cinema -- "|cut:"*Swag -- " }}</a></li>
 {% endfor %}
 </ul>
 </div>
