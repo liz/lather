@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}{{ block.super }} -  Search Results{% endblock %}
+
+{% block content %}
+<div id="bigbox">
+<h1>Search results for <span class="special">{{ query }}</span></h1>
+<div class="clear"></div>
+<div id="siteblock">
+<ul class="dates">
+{% for article in results %}
+<li>{{ article.pub_date|date:"n.j.y" }} <a href="article.get_absolute_url">{{ article.title}}</a> ({% if article.tags %}posted in
+{% load tagging_tags  %}{% tags_for_object article as tag_list %}{% for tag in tag_list %}<a href="/tags/{{ tag }}">{{ tag }}</a>{% if forloop.last %}{% else %} {%ifequal forloop.revcounter0 1 %}and {% else %}, {% endifequal %}{% endif %}{% endfor %}{% else %}rated {% load meowr %}{% get_meowr_ratings as rating_list %}{% for rating in rating_list %}<a href='/ratings/{{ rating.slug }}' title='{{ rating.dscription }}'><img src='/static/clean/images/rating/{{ rating.slug }}.png' class='rating' alt='{{ rating.description }}' /></a>{% endfor %}
+{% endif %})</li>
+{% endfor %}
+</ul>
+</div>
+</div>
+{% endblock %}

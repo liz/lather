@@ -1,0 +1,58 @@
+{% extends "base.html" %}{% load typogrify %}
+
+
+{% block title %}Lather Rinse Repeat - {{ month|date:"F Y"}}{% endblock %}
+
+{% block content %}
+<div id="bigbox">
+<div class="clear"></div>
+<h1>The Past for <span class="special">{{ month|date:"F Y"}}</a></h1>
+</div>
+{% for object in object_list %}
+<div class="wrapper">
+<div class="content">
+<h1><a href="{{ object.get_absolute_url }}"><span class="title_date">{{ object.pub_date|date:"g:ia" }}</span> {{ object.title|typogrify|safe }}</a></h1>
+{% if object.excerpt_html %}
+{{ object.excerpt_html|typogrify|safe }}
+<p class="excerpt"><a href="{{ object.get_absolute_url }}#body">(Read the rest)</a></p>
+{% else %}
+{{ object.body_html|typogrify|safe }}
+{% endif %}
+</div>
+</div>
+<div class="meta">
+<dl class="posted">
+<dt><a href="{{ article.url }}" title="{{ article.title}}"><span class="special">Posted</span> {{ object.pub_date|date:"F j, Y" }}</a></dt>
+</dl>
+<dl>
+{% if object.tags %}
+<dt>Tags</dt>
+{% load tagging_tags %}
+<dd>
+{% tags_for_object object as tag_list %}{% for tag in tag_list %}<a href="/tags/{{ tag }}">{{ tag }}</a>{% if forloop.last %}{% else %}{%ifequal forloop.revcounter0 1 %} and {% else %}, {% endifequal %}{% endif %}{% endfor %}
+</dd>
+{% else %}
+<dt>Rating</dt>
+{% load meowr %}
+<dd>
+{% for rating in object.rating.all %}
+<a href='/ratings/{{ rating.slug }}' title='{{ rating.dscription }}'><img src='/static/clean/images/rating/{{ rating.slug }}.png' class='rating' alt='{{ rating.description }}' /></a>{% endfor %}</dd>
+{% endif %}
+</dl>
+<dl>
+<dt>Comment</dt>
+<dd>
+{% load threadedcommentstags %}
+{% get_free_comment_count for object as comment_count %}
+{% ifnotequal comment_count 0 %}<a href="{{ object.get_absolute_url }}#commenting">{{ comment_count }} comment{{ comment_count|pluralize }}</a>{% else %}<a href="{{ object.get_absolute_url }}#commenting">Post a comment!</a>{% endifnotequal %}
+</dd>
+</dl>
+</div>
+{% endfor %}
+<div class="clear"></div>
+<div>
+<p class="right">{% if has_next %}<a class="older" href="?page={{ next }}">rewind</a>{% endif %} / {% if has_previous %}<a class="newer" href="?page={{ previous }}">forward</a>{% endif %}</p>
+<div class="clear"></div>
+</div>
+</div>
+{% endblock %}

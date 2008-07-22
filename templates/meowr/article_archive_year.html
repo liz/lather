@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Lather Rinse Repeat - {{ year}}{% endblock %}
+
+{% block content %}
+<div id="bigbox">
+<div class="clear"></div>
+<h1>The Past for <span class="special">{{ year}}</span></h1>
+<div id="siteblock">
+<div class="clear"></div>
+<ul>
+{% for month in date_list %}
+<li><a href="/{{ year }}/{{ month|date:"n" }}/">{{ month|date:"F" }}</a></li>
+{% endfor %}
+</ul>
+</div>
+</div>
+{% endblock %}

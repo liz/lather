@@ -1,0 +1,44 @@
+{% load meowr tagging_tags %}
+<div class="col">
+<h3>Search</h3>
+<div class="search">
+<form mothod="get" action="/search/">
+<input type-"text" name="q" id="id_q">
+</form>
+</div>
+<div class="tweets">
+<h3><a href='http://twitter.com/misstricky/' title='My Twitter page at Twitter.com'>Currently</a></h3>
+<ul class="no_change">
+{% get_meowr_tweets as tweet_list %}
+{% for tweet in tweet_list %}
+<li>{{ tweet.text|safe }} <a href="{{ tweet.url }}">about {{ tweet.pub_time|timesince }} ago</a></li>
+{% endfor %}
+</ul>
+</div>
+</div>
+<div class="col">
+<h3><a href="/exits/">Tags</a></h3>
+<div class="tags">
+<p>
+{% get_meowr_tags as tag_list %}{% for tag in tag_list|slice:":10" %}<a href="/tags/{{ tag }}">{{ tag }}</a> {% endfor %}
+<span id="more">{% for tag in tag_list|slice:"10:" %}<a href="/tags/{{ tag }}">{{ tag }}</a> {% endfor %}</span><a href="#" id="more_tags">more...</a>
+</p>
+</div>
+<h3>Popular Posts</h3>
+<div>
+<ul class="no_change">
+<li><a href="/2008/7/3/shiny-new-things/">Shiny New Things</a></li>
+<li><a href="/2007/7/7/iphone-video-automation-with-visualhub">Automatic iPhone Video Conversion with VisualHub</a></li>
+</ul>
+</div>
+</div>
+<div class="col">
+<p class='close'><a id="extra_hide" href="#">(X)</a></p>
+<h3><a href="http://del.icio.us/tricky">Recent Exits</a></h3>
+<ul class="no_change">
+{% get_meowr_bookmarks as bookmark_list %}
+{% for bookmark in bookmark_list %}
+<li><a href="{{ bookmark.url }}">{{ bookmark.description|safe }}</a></li>
+{% endfor %}
+</ul>
+</div>

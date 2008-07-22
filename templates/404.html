@@ -1,0 +1,12 @@
+{% extends "base.html" %}{% load typogrify %}
+
+{% block title %}{{ block.super }} -  Four Oh Four {% endblock %}
+
+{% block content %}
+<div id="bigbox">
+<h1>Four Oh Four</h1>
+<div id="siteblock">
+<h2>{% filter typogrify %}Apparently I have gone missing! :o {% endfilter %}</h2>
+</div>
+</div>
+{% endblock %}

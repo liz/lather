@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}{{ block.super }} -  The Exit {% endblock %}
+
+{% block content %}
+<div id="bigbox">
+<h1>The Exit</h1>
+<div class="clear"></div>
+{% load meowr %}
+<div id="siteblock">
+<div class="clear"></div>
+<ul>
+<ul>
+{% load meowr tagging_tags %}
+{% get_meowr_tags as tag_list %}{% for tag in tag_list %}
+<li><a href="/tags/{{ tag }}">{{ tag }}</a></li>
+{% endfor %}
+</ul>
+</ul>
+</div>
+</div>
+{% endblock %}

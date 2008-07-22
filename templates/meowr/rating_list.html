@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}{{ block.super }} -  Ratings {% endblock %}
+
+{% block content %}
+<div id="bigbox">
+<h1>Ratings</h1>
+<div class="clear"></div>
+{% load meowr %}
+<div id="siteblock">
+<div class="clear"></div>
+<ul class="no_change">
+{% for object in object_list %}
+<li><a href='/ratings/{{ object.slug }}' title='{{ object.dscription }}'><img src='/static/clean/images/rating/{{ object.slug }}.png' class='rating' alt='{{ object.description }}' /></a></li>
+{% endfor %}
+</ul>
+</div>
+</div>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends "base.html" %}{% load typogrify %}
+
+{% block title %}{{ block.super }} -  Five Hundred {% endblock %}
+
+{% block content %}
+<div id="bigbox">
+<h1>Five Hundred</h1>
+<div id="siteblock">
+<h2>{% filter typogrify %}Oh my! Internal server error! :o {% endfilter %}</h2>
+</div>
+</div>
+{% endblock %}

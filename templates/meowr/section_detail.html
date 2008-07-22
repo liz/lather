@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block title %}{{ block.super }} -  {{ section.title}} {% endblock %}
+
+{% block content %}
+<div id="bigbox">
+<h1>{{ section.description}}</h1>
+<div class="clear"></div>
+{% load meowr %}
+<div id="siteblock">
+<div class="clear"></div>
+<div class="cinemablock">
+{%ifequal section.kind 1 %}
+<h2>{{ section.title}} by Tag</h2>
+<ul>
+{% load tagging_tags %}{% get_meowr_tags as tag_list %}{% for tag in tag_list %}<li><a href="/tags/{{ tag }}">{{ tag }}</a></li>{% endfor %}
+</ul>
+{% else %}
+<h2>{{ section.title}} by Rating</h2>
+<ul class="no_change">
+{% get_meowr_ratings as rating_list %}
+{% for rating in rating_list %}
+<li><a href='/ratings/{{ rating.slug }}' title='{{ rating.dscription }}'><img src='/static/clean/images/rating/{{ rating.slug }}.png' class='rating' alt='{{ rating.description }}' /></a></li>
+{% endfor %}
+{% endifequal %}
+</ul>
+</div>
+<div class="cinemadateblock">
+<h2>{{ section.title}} by Date</h2>
+<ul class="no_change">
+{% for object in object_list %}
+{% ifchanged %}
+<li class="month_title_small"><a href="/{{ object.pub_date|date:"Y" }}/{{ object.pub_date|date:"n" }}/">{{ object.pub_date|date:"F Y" }}</a></li>
+{% endifchanged %}
+<li>{{ object.pub_date|date:"j" }}: <a href="{{ object.get_absolute_url }}">{{ object.title|cut:"*Cinema -- "|cut:"*Swag -- " }}</a></li>
+{% endfor %}
+</ul>
+</div>
+<div class="cinemablock">
+<h2>{{ section.title}} by Title</h2>
+<ul class="dates">
+<ul>
+{% for object in object_list|dictsort:"title" %}
+<li><a href="{{ object.get_absolute_url }}">{{ object.title|cut:"*Cinema -- "|cut:"*Swag -- " }}</a></li>
+{% endfor %}
+</ul>
+<p class="right">{% if has_next %}<a class="older" href="?page={{ next }}">older</a>{% endif %}  {% if has_previous or has_next %}/{% endif %} {% if has_previous %}<a class="newer" href="?page={{ previous }}">newer</a>{% endif %}</p>
+</div>
+</div>
+</div>
+<div class="clear"></div>
+<div class="clear"></div>
+<div>
+</div>
+{% endblock %}
