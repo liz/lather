@@ -1,6 +1,7 @@
 from django.conf.urls.defaults import *
 from meowr.feeds import LatestArtclesFeed
 from django.contrib import admin
+from django.conf import settings
 
 feeds = {'posts': LatestArtclesFeed }
 
@@ -26,4 +27,9 @@ urlpatterns = patterns('',
 	
 	 url(r'^feeds/(?P<url>.*)/$', 'django.contrib.syndication.views.feed', { 'feed_dict': feeds }),
 	
+)
+
+if settings.DEBUG:
+	 urlpatterns += patterns('',
+	 url(r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': '/Library/Python/2.5/site-packages/lather/static'}),
 )
