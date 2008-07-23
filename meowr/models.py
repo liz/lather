@@ -69,7 +69,7 @@ class Article(models.Model):
 	cre_date        = models.DateTimeField(auto_now_add=True)
 	mod_date        = models.DateTimeField(auto_now=True)
 	status 			= models.IntegerField(choices=STATUS_CHOICES, default=1)
-	author 			= models.ForeignKey(User)
+	author 			= models.ForeignKey(User, default=1)
 	sections		= models.ManyToManyField(Section, default="articles")
 	tags			= TagField()
 	rating          = models.ManyToManyField(Rating, blank=True)
