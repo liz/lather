@@ -2,7 +2,7 @@ from django.conf.urls.defaults import *
 from meowr.feeds import LatestArtclesFeed
 from django.contrib import admin
 
-feeds = {'all': LatestArtclesFeed }
+feeds = {'posts': LatestArtclesFeed }
 
 admin.autodiscover()
 

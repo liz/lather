@@ -132,7 +132,7 @@ class MeowrBookmarks(template.Node):
     self.var_name = var_name
 
   def render(self, context):
-    bookmarks = Bookmark.objects.all()[0:5]
+    bookmarks = Bookmark.objects.all()[0:6]
     context[self.var_name] = bookmarks
     return ''
 
