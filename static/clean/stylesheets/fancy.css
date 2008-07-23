@@ -131,7 +131,7 @@ a#fancy_left, a#fancy_right {
 	height: 100%; 
 	width: 35%; 
 	cursor: pointer;
-	background-image: url(/static/clean/images/data:image/gif;base64,AAAA);
+	background-image: url(data:image/gif;base64,AAAA));
 	z-index: 100; 
 }
 
