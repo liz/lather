@@ -12,7 +12,6 @@ def section_detail(request, slug):
 	return object_list(request, queryset=section.article_set.filter(status=Article.LIVE_STATUS),
 	paginate_by=30, extra_context={ 'section': section }, template_name = 'meowr/section_detail.html',)
 	
-	
 def rating_detail(request, slug):
 	rating = get_object_or_404(Rating, slug=slug)
 	return object_list(request, queryset=rating.article_set.filter(status=Article.LIVE_STATUS),
