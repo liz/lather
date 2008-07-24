@@ -15,6 +15,8 @@ urlpatterns = patterns('',
 	
 	 url(r'^admin/(.*)', admin.site.root),
 	
+	 url(r'^feeds/(?P<url>.*)/$', 'django.contrib.syndication.views.feed', { 'feed_dict': feeds }),
+	
      #url(r'^admin/', include('django.contrib.admin.urls')),
 
 	 url(r'^(?P<url>(girl|site)/)$', 'django.contrib.flatpages.views.flatpage'), 
@@ -22,10 +24,8 @@ urlpatterns = patterns('',
 	 url(r'^threadedcomments/', include('threadedcomments.urls')),
 	
 	 url (r'^search/$', 'search.views.search'),
-
-	 url(r'^', include('meowr.urls')),
 	
-	 url(r'^feeds/(?P<url>.*)/$', 'django.contrib.syndication.views.feed', { 'feed_dict': feeds }),
+	 url(r'^', include('meowr.urls')),
 	
 )
 
