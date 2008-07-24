@@ -79,7 +79,7 @@ a#extra_hide:hover{color:#66A4DE;}
 .star5{list-style-image: url(/static/clean/images/star5.png);}
 
 h1 .title_date{color:#8D969E;text-transform:lowercase;}
-h1 {font-size:2.1em;font-weight:lighter;margin-bottom:1em;padding-top:8px;text-shadow: #a7a7a7 1px 1px 2px;}
+h1 {font-size:2.1em;font-weight:lighter;margin-bottom:1.5em;padding-top:8px;text-shadow: #a7a7a7 1px 1px 2px;}
 .content h1 a, h1 a:hover{color:#323232;font-weight:lighter;}
 .content h1:hover{text-decoration:underline;color:#eee;}
 h3{color:#8D969E;font-weight:lighter;line-height:3;text-decoration:none;}
