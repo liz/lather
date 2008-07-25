@@ -19,7 +19,7 @@ class ArticleAdmin(admin.ModelAdmin):
 			'fields': ('body',),
 		}),
 		(None, {
-			'fields': ('author', 'pub_date', 'enable_comments', 'tags',  'sections', 'rating')
+			'fields': ('status', 'author', 'pub_date', 'enable_comments', 'tags',  'sections', 'rating')
 		})
 	)
 	
