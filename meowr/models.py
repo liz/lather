@@ -81,7 +81,7 @@ class Article(models.Model):
 		verbose_name = 'article'
 		ordering = ['-pub_date']
 		
-	def _unicode_(self):
+	def __unicode__(self):
 		return self.title
 	
 	def save(self):
