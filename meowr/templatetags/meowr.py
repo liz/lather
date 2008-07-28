@@ -40,7 +40,7 @@ def do_get_meowr_sections(parser, token):
   var_name = m.groups()[0]
   return MeowrSections(var_name)
 
-	
+
 class MeowrExits(template.Node):
   def __init__(self, var_name):
     self.var_name = var_name

@@ -65,7 +65,7 @@ a#extra_hide{color:#8D969E;}
 a#extra_hide:hover{color:#66A4DE;}
 .close{float:right;vertical-align:top;font-weight:bolder;}
 
-.pimg{text-align:center;}
+.pimg{text-align:center;display:block;}
 .pimg img{border:1px solid #666;padding:4px;margin-bottom:30px;margin-top:15px;}
 .pimgn img{border:none;margin-bottom:30px;margin-top:15px;}
 .fimg{border:1px solid #666;padding:4px;float:left;margin-right:6px;margin-bottom:3px;}
