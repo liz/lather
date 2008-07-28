@@ -37,10 +37,10 @@ div#nav a:hover{background-position:0 -14px;}
 div#nav a{display:block;}
 
 div.wrapper{float:left;width:100%;padding-bottom:80px;}
-div.content{margin-left:370px;padding-right:10%;padding-left:30px;background:url(/static/clean/images/content-bg.png) no-repeat;}
+div.content{margin-left:350px;padding-right:10%;padding-left:30px;background:url(/static/clean/images/content-bg.png) no-repeat;}
 div.content .excerpt{text-align:right;padding-right:30px;}
 ul li{line-height:1.6em;}
-div.meta{font-size:.9em;float:left;width:230px;margin-left:-100%;line-height:1.8;padding-left:140px;background:url(/static/clean/images/metabg.png) no-repeat 80px bottom;padding-bottom:85px;padding-top:2px;}
+div.meta{font-size:.9em;float:left;width:210px;margin-left:-100%;line-height:1.8;padding-left:140px;background:url(/static/clean/images/metabg.png) no-repeat 80px bottom;padding-bottom:85px;padding-top:2px;}
 div.meta dt, div.meta dd{display:inline;}
 div#extra{font-size:.9em;clear:left;width:100%;text-align:left;background:url(/static/clean/images/tree.png) repeat-y;padding-bottom:50px;color:#8D969E;}
 div#extra p, div#extra ul li{line-height:1.6em;padding-bottom:.2em;}
@@ -146,7 +146,7 @@ div#commentness p{line-height:1.6em;}
 div.comment-shape{width:100%;padding-top:15px;padding-bottom:30px;text-align:left;}
 ol#comments{padding-bottom:25px;}
 ol#comments li{}
-#comments cite{font-style:normal;float:left;width:115px;text-align:right;border-right: 1px solid #dddddc;padding:0 3% 0 3%;margin:13px 3% 5% 3%;}
+#comments cite{font-style:normal;float:left;width:110px;text-align:right;border-right: 1px solid #dddddc;padding:0 3% 0 3%;margin:13px 3% 5% 3%;}
 #comments cite .date {text-transform:lowercase;}
 #comments cite span{display:block;}
 .said{float:left;width:65%;}

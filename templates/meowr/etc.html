@@ -39,7 +39,7 @@
 <ul class="no_change">
 {% get_meowr_bookmarks as bookmark_list %}
 {% for bookmark in bookmark_list %}
-<li><a href="{{ bookmark.url}}">{{ bookmark.description|typogrify|safe  }}</a></li>
+<li><a href="{{ bookmark.url}}">{{ bookmark.description }}</a></li>
 {% endfor %}
 </ul>
 </div>
