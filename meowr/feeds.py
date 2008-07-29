@@ -2,7 +2,7 @@ from django.core.exceptions import ObjectDoesNotExist
 from django.utils.feedgenerator import Atom1Feed
 from django.contrib.sites.models import Site
 from django.contrib.syndication.feeds import Feed
-from meowr.models import Article
+from meowr.models import Article, Section
 
 current_site = Site.objects.get_current()
 
