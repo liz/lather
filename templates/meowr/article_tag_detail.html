@@ -1,5 +1,6 @@
 {% extends "base.html" %}{% load typogrify %}
 
+{% block title %}{{ block.super }} -  {{ tag.name|smartypants|safe|capfirst }} {% endblock %}
 
 {% block content %}
 {% for object in object_list %}
@@ -7,14 +8,16 @@
 <div class="content">
 <h1><a href="{{ object.get_absolute_url }}"><span class="title_date">{{ object.pub_date|date:"g:ia" }}</span> {{ object.title|typogrify|safe }}</a></h1>
 {% if object.excerpt_html %}
-<p class="excerpt"><a href="{{ object.get_absolute_url }}">(Read the rest)</a></p>
+{{ object.excerpt_html|typogrify|safe }}
+<p class="excerpt"><a href="{{ object.get_absolute_url }}#body">(Read the rest)</a></p>
+{% else %}
+{{ object.body_html|typogrify|safe }}
 {% endif %}
-{{ object.body_html|safe }}
 </div>
 </div>
 <div class="meta">
 <dl class="posted">
-<dt><a href="{{ article.url }}" title="{{ article.title}}"><span class="special">Posted</span>{{ object.pub_date|date:"F j, Y" }}</a></dt>
+<dt><a href="{{ object.get_absolute_url }}" title="{{ article.title}}"><span class="special">Posted</span> {{ object.pub_date|timesince }} ago{% comment %}{{ object.pub_date|date:"F j, Y" }}{% endcomment %}</a></dt>
 </dl>
 <dl>
 {% if object.tags %}
@@ -29,6 +32,7 @@
 <dd>
 {% for rating in object.rating.all %}
 <a href='/ratings/{{ rating.slug }}' title='{{ rating.dscription }}'><img src='/static/clean/images/rating/{{ rating.slug }}.png' class='rating' alt='{{ rating.description }}' /></a>{% endfor %}</dd>
+{% endif %}
 </dl>
 <dl>
 <dt>Comment</dt>

@@ -39,7 +39,7 @@ urlpatterns = patterns('django.views.generic',
 	
 	 url(r'^ratings/$', 'list_detail.object_list', dict(queryset=Rating.objects.all(), paginate_by=100), name='rating_list'),
 	
-	 url(r'^tags/(?P<tag>[^/]+)/$', tagged_object_list, dict(queryset_or_model=Article.objects.filter(status=Article.LIVE_STATUS), paginate_by=10, allow_empty=True), name='article_tag_detail.html'),
+	 url(r'^tags/(?P<tag>[^/]+)/$', tagged_object_list, dict(queryset_or_model=Article.objects.filter(status=Article.LIVE_STATUS), paginate_by=10, allow_empty=True, template_name='meowr/article_tag_detail.html'), name='article_tag_detail.html'),
 	
 )
 
