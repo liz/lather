@@ -36,6 +36,9 @@ div#menu ul li{margin:0;padding:0;}
 div#nav a:hover{background-position:0 -14px;}
 div#nav a{display:block;}
 
+.feed a{display:inline-block;background:url(/static/clean/images/rss.png) no-repeat;width:16px;height:16px;margin-left:5px;}
+.feed a:hover{background-position:0 -20px;}
+
 div.wrapper{float:left;width:100%;padding-bottom:80px;}
 div.content{margin-left:350px;padding-right:10%;padding-left:30px;background:url(/static/clean/images/content-bg.png) no-repeat;}
 div.content .excerpt{text-align:right;padding-right:30px;}

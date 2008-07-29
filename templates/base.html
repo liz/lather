@@ -6,7 +6,9 @@
 
 <title>{% block title %}Lather Rinse Repeat{% endblock %}</title>
 
-<link href="http://feeds.latherrinserepeat.org/all_articles/" rel="alternate" type="application/rss+xml" />
+{% block feeds %}
+<link href="http://feeds.latherrinserepeat.org/all_articles/" rel="alternate" type="application/rss+xml" title="All Posts" />
+{% endblock %}
 <meta name="viewport" content="width=700, initial-scale=0.45, minimum-scale=0.45" />
 <link rel="shortcut icon" href="/static/clean/images/heart.ico" />
 
@@ -25,18 +27,18 @@
 <a id="extra_toggle" href="#"> </a>
 </div>
 <div id="title">
-<a id="title_link" href="/"> </a>
+<a id="title_link" href="/" title="Lather Rinse Repeat"> </a>
 </div>
 <div id="nav-padding">
 <div id="nav">
 <div id="menu">
 <ul class="no_change">
-<li><a href="/" class="index"> </a></li>
-<li><a href="/girl/" class="girl"> </a></li>
-<li><a href="/site/" class="site"> </a></li>
-<li><a href="/cinema/" class="cinema"> </a></li>
-<li><a href="/swag/" class="swag"> </a></li>
-<li><a href="/articles/" class="past"> </a></li>
+<li><a href="/" class="index" title="The Index"> </a></li>
+<li><a href="/girl/" class="girl" title="The Girl"> </a></li>
+<li><a href="/site/" class="site" title="The Site"> </a></li>
+<li><a href="/cinema/" class="cinema" title="Cienma"> </a></li>
+<li><a href="/swag/" class="swag" title="Swag"> </a></li>
+<li><a href="/articles/" class="past" title="The Past"> </a></li>
 <li><script type="text/javascript">
 //<![CDATA[
 
@@ -62,7 +64,7 @@ while(x=eval(x));}hiveware_enkoder();
 
 //]]>
 </script></li>
-<li><a href="http://feeds.latherrinserepeat.org/all_articles/" class="rss"> </a></li>
+<li><a href="http://feeds.latherrinserepeat.org/all_articles/" class="rss" title="RSS Feed"> </a></li>
 <li><a href="/exits/" class="exit"> </a></li>
 </ul>
 </div>

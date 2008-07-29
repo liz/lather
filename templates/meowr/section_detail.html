@@ -1,6 +1,11 @@
 {% extends "base.html" %}
 
-{% block title %}{{ block.super }} -  {{ section.title}} {% endblock %}
+{% block title %}{{ block.super }} -  {{ section.title }} {% endblock %}
+
+{% block feeds %}
+{{ block.super }}
+<link href="/feeds/sections/{{ section.slug }}/" rel="alternate" type="application/rss+xml" title="{{ section.title }} Feed" />
+{% endblock %}
 
 {% block content %}
 <div id="bigbox">

@@ -1,8 +1,17 @@
 {% extends "base.html" %}{% load typogrify %}
 
-{% block title %}{{ block.super }} -  {{ tag.name|smartypants|safe|capfirst }} {% endblock %}
+{% block title %}{{ block.super }} -  {{ tag.name|capfirst }} {% endblock %}
+
+{% block feeds %}
+{{ block.super }}
+<link href="/feeds/tags/{{ tag.name }}/" rel="alternate" type="application/rss+xml" title="Articles Posted in {{ tag.name|capfirst }}" />
+{% endblock %}
 
 {% block content %}
+<div id="bigbox">
+<div class="clear"></div>
+<h1>Tag <span class="special">{{tag.name|capfirst }}</h1>
+</div>
 {% for object in object_list %}
 <div class="wrapper">
 <div class="content">
@@ -46,7 +55,8 @@
 {% endfor %}
 <div class="clear"></div>
 <div>
-<p class="right">{% if has_next %}<a class="older" href="?page={{ next }}">rewind</a>{% endif %} / {% if has_previous %}<a class="newer" href="?page={{ previous }}">forward</a>{% endif %}</p>
+<p class="right">
+{% if has_next %}<a class="older" href="?page={{ next }}">rewind</a>{% endif %} / {% if has_previous %}<a class="newer" href="?page={{ previous }}">forward</a>{% endif %}</p>
 <div class="clear"></div>
 </div>
 </div>
