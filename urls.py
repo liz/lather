@@ -30,7 +30,6 @@ urlpatterns = patterns('',
 	 url (r'^search/$', 'search.views.search'),
 
 	 url(r'^', include('meowr.urls')),
-	
 )
 
 if settings.DEBUG:
