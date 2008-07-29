@@ -3,6 +3,8 @@ from django.utils.feedgenerator import Atom1Feed
 from django.contrib.sites.models import Site
 from django.contrib.syndication.feeds import Feed
 from meowr.models import Article, Section
+from tagging.models import Tag, TaggedItem
+from threadedcomments.models import FreeThreadedComment
 
 current_site = Site.objects.get_current()
 
@@ -22,3 +24,39 @@ class LatestArtclesFeed(Feed):
 		
 	def item_pubdate(self, item):
 		return item.pub_date
+		
+		
+class TaggedArticlesFeed(Feed):
+	def get_object(self, bits):
+		tag = Tag.objects.get(name=bits[0])
+		return tag
+
+	def items(self, obj):
+		return TaggedItem.objects.get_by_model(Article.objects.filter(status=Article.LIVE_STATUS), obj)[:15]
+
+	def link(self, obj):
+		return '/tags/%s/' % obj
+
+	def title(self, obj):
+		return 'Lather Rinse Repeat Feed for tag %s' % obj
+
+	def description(self, obj):
+		return 'Lather Rinse Repeat Feed for tag %s' % obj
+		
+		
+class SectionFeed(Feed):
+	def get_object(self, bits):
+		section = Section.objects.get(slug=bits[0])
+		return section
+
+	def items(self, obj):
+		return obj.live_article_set()[:15]
+
+	def link(self, obj):
+		return '/%s/' % obj.slug
+
+	def title(self, obj):
+		return 'Lather Rinse Repeat Feed for %s' % obj
+
+	def description(self, obj):
+		return 'Lather Rinse Repeat Feed for %s' % obj

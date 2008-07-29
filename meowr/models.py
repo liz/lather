@@ -28,7 +28,7 @@ class Section(models.Model):
 		return self.slug
 		
 	def live_article_set(self):
-		from mewor.models import Aritcle
+		from meowr.models import Article
 		return self.article_set.filter(status=Article.LIVE_STATUS)
 
 class Rating(models.Model):

@@ -1,9 +1,13 @@
 from django.conf.urls.defaults import *
-from meowr.feeds import LatestArtclesFeed
+from meowr.feeds import LatestArtclesFeed, TaggedArticlesFeed, SectionFeed
 from django.contrib import admin
 from django.conf import settings
 
-feeds = {'posts': LatestArtclesFeed }
+feeds = {
+    'posts': LatestArtclesFeed,
+    'tags': TaggedArticlesFeed,
+	'sections': SectionFeed,
+}
 
 admin.autodiscover()
 
@@ -17,7 +21,7 @@ urlpatterns = patterns('',
 	
      #url(r'^admin/', include('django.contrib.admin.urls')),
 
-	 url(r'^feeds/(?P<url>.*)/$', 'django.contrib.syndication.views.feed', { 'feed_dict': feeds }),
+	 url(r'^feeds/(?P<url>.*)/$', 'django.contrib.syndication.views.feed', { 'feed_dict': feeds }, name='feeds'),
 
 	 url(r'^(?P<url>(girl|site)/)$', 'django.contrib.flatpages.views.flatpage'), 
 	
