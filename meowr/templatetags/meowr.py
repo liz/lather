@@ -68,7 +68,7 @@ class MeowrRatings(template.Node):
     self.var_name = var_name
 
   def render(self, context):
-    ratings = Rating.objects.all()[0:5]
+    ratings = Rating.objects.all()
     context[self.var_name] = ratings
     return ''
 
