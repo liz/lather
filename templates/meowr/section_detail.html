@@ -24,8 +24,8 @@
 <h2>{{ section.title}} by Rating</h2>
 <ul class="no_change">
 {% get_meowr_ratings as rating_list %}
-{% for rating in rating_list %}
-<li><a href='/ratings/{{ rating.slug }}' title='{{ rating.dscription }}'><img src='/static/clean/images/rating/{{ rating.slug }}.png' class='rating' alt='{{ rating.description }}' /></a></li>
+{% for rating in rating_list|dictsort:"id"  %}
+<li><a href='/ratings/{{ rating.slug }}/' title='{{ rating.description }}'><img src='/static/clean/images/rating/{{ rating.slug }}.png' class='rating' alt='{{ rating.description }}' /></a></li>
 {% endfor %}
 {% endifequal %}
 </ul>
