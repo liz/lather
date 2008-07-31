@@ -17,6 +17,8 @@ urlpatterns = patterns('',
 
 	 url(r'^admin/meowr/article/(?P<object_id>[0-9]+)/preview/$', 'meowr.views.preview'),
 	
+	 url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
+	
 	 url(r'^admin/(.*)', admin.site.root),
 	
      #url(r'^admin/', include('django.contrib.admin.urls')),

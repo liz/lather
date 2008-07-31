@@ -49,7 +49,9 @@ div#extra{font-size:.9em;clear:left;width:100%;text-align:left;background:url(/s
 div#extra p, div#extra ul li{line-height:1.6em;padding-bottom:.2em;}
 div#extra a{color:#554;}
 div#extra a:hover{color:#66A4DE;}
-div#extra .tweets{}
+div#extra .tweets{color:#554;}
+div#extra .tweets a{color:#8D969E;}
+div#extra .tweets a:hover{color:#66A4DE;}
 div.meta .posted{font-weight:500;font-size:1.2em;color:#8D969E;line-height:2.2;}
 div.meta .posted a{color:#323232;}
 div.meta .posted a .special{color:#8D969E;}
