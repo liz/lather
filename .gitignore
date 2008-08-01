@@ -24,5 +24,10 @@ meowr/templatetags/meowr.pyc
 search/__init__.pyc
 search/models.pyc
 search/views.pyc
+<<<<<<< HEAD:.gitignore
 MySQL_python-1.2.2-py2.4-linux-i686.egg-tmp
 simplejson-1.9.2-py2.4-linux-i686.egg-tmp
+=======
+simplejson-1.9.2-py2.4-linux-i686.egg-tmp
+MySQL_python-1.2.2-py2.4-linux-i686.egg-tmp
+>>>>>>> 55bdfcd1f77ecce72bc5e8d43e2d12a498c1595b:.gitignore

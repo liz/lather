@@ -5,8 +5,9 @@ from syncr.app.tweet import TwitterSyncr
 from syncr.twitter import models
 import re, datetime, time, MySQLdb
 setup_environ(settings)
+from django.conf import settings
 
 from syncr.app.tweet import TwitterSyncr
-t = TwitterSyncr('misstricky', 'callico')
+t = TwitterSyncr(settings.TWITTER_USER, settings.TWITTER_PASS)
 
-t.syncTwitterUserTweets('misstricky')
+t.syncTwitterUserTweets(settings.TWITTER_USER)
