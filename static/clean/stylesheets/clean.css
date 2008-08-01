@@ -172,3 +172,5 @@ div#exit ul li{float:left;margin:0 15px 12px 15px;padding:0;}
 
 pre{padding:1em 0;overflow:hidden;border-top:1px dotted #ccd;border-bottom:1px dotted #ccd;}
 pre, code{font-family:"Monaco", "Courier New", Courier;font-size:10px;}
+blockquote{margin:2em 0 2.3em 8%;font-style:italic;color:#556;}
+.caption{margin:-40px 0 2em 8%;display:block;}
