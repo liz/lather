@@ -27,6 +27,7 @@
 <div class="meta">
 <dl class="posted">
 <dt><a href="{{ object.get_absolute_url }}" title="{{ article.title}}"><span class="special">Posted</span> {{ object.pub_date|timesince }} ago{% comment %}{{ object.pub_date|date:"F j, Y" }}{% endcomment %}</a></dt>
+</dl>
 {% if object.tags %}
 <dl>
 <dt>Tags</dt>
@@ -45,6 +46,7 @@
 <a href='/ratings/{{ rating.slug }}' title='{{ rating.dscription }}'><img src='/static/clean/images/rating/{{ rating.slug }}.png' class='rating' alt='{{ rating.description }}' /></a>{% endfor %}</dd>
 </dl>
 {% endif %}
+<dl>
 <dt>Comment</dt>
 <dd>
 {% load threadedcommentstags %}
@@ -56,8 +58,7 @@
 {% endfor %}
 <div class="clear"></div>
 <div>
-<p class="right">
-{% if has_next %}<a class="older" href="?page={{ next }}">rewind</a>{% endif %} / {% if has_previous %}<a class="newer" href="?page={{ previous }}">forward</a>{% endif %}</p>
+<p class="right">{% if has_next %}<a class="older" href="?page={{ next }}">rewind</a>{% endif %} / {% if has_previous %}<a class="newer" href="?page={{ previous }}">forward</a>{% endif %}</p>
 <div class="clear"></div>
 </div>
 </div>

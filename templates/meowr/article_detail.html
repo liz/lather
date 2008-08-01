@@ -15,21 +15,24 @@
 <dl class="posted">
 <dt><a href="{{ article.url }}" title="{{ article.title}}"><span class="special">Posted</span> {{ object.pub_date|date:"F j, Y" }}</a></dt>
 </dl>
-<dl>
 {% if object.tags %}
+<dl>
 <dt>Tags</dt>
 {% load tagging_tags %}
 <dd>
 {% tags_for_object object as tag_list %}{% for tag in tag_list %}<a href="/tags/{{ tag }}">{{ tag }}</a>{% if forloop.last %}{% else %}{%ifequal forloop.revcounter0 1 %} and {% else %}, {% endifequal %}{% endif %}{% endfor %}
 </dd>
-{% else %}
+</dl>
+{% endif %}
+{% if object.rating.all %}
+<dl>
 <dt>Rating</dt>
 {% load meowr %}
 <dd>
 {% for rating in object.rating.all %}
 <a href='/ratings/{{ rating.slug }}' title='{{ rating.dscription }}'><img src='/static/clean/images/rating/{{ rating.slug }}.png' class='rating' alt='{{ rating.description }}' /></a>{% endfor %}</dd>
-{% endif %}
 </dl>
+{% endif %}
 <dl>
 <dt>Comment</dt>
 <dd>
