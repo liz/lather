@@ -27,7 +27,6 @@
 <div class="meta">
 <dl class="posted">
 <dt><a href="{{ object.get_absolute_url }}" title="{{ article.title}}"><span class="special">Posted</span> {{ object.pub_date|timesince }} ago{% comment %}{{ object.pub_date|date:"F j, Y" }}{% endcomment %}</a></dt>
-</dl>
 {% if object.tags %}
 <dl>
 <dt>Tags</dt>
@@ -37,8 +36,8 @@
 </dd>
 </dl>
 {% endif %}
-<dl>
 {% if object.rating.all %}
+<dl>
 <dt>Rating</dt>
 {% load meowr %}
 <dd>
