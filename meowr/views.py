@@ -10,7 +10,7 @@ from django.contrib.admin.views.decorators import staff_member_required
 def section_detail(request, slug):
 	section = get_object_or_404(Section, slug=slug)
 	return object_list(request, queryset=section.article_set.filter(status=Article.LIVE_STATUS),
-	paginate_by=30, extra_context={ 'section': section }, template_name = 'meowr/section_detail.html',)
+	paginate_by=35, extra_context={ 'section': section }, template_name = 'meowr/section_detail.html',)
 	
 def rating_detail(request, slug):
 	rating = get_object_or_404(Rating, slug=slug)
