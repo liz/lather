@@ -2,6 +2,10 @@
 
 <title>{% block title %}{{ block.super }} -  {{ tag.name|capfirst }} {% endblock %}</title>
 
+{% block feeds %}
+{{ block.super }}
+<link href="/feeds/tags/{{ tag.name }}/" rel="alternate" type="application/rss+xml" title="All Posts in {{ tag.name|capfirst }}" />
+{% endblock %}
 
 {% block content %}
 <div id="bigbox">
