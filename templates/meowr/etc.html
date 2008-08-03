@@ -20,8 +20,8 @@
 <h3><a href="/tags/">Tags</a></h3>
 <div class="tags">
 <p>
-{% get_meowr_tags as tag_list %}{% for tag in tag_list|slice:":10" %}<a href="/tags/{{ tag }}">{{ tag }}</a> {% endfor %}
-<span id="more">{% for tag in tag_list|slice:"10:" %}<a href="/tags/{{ tag }}">{{ tag }}</a> {% endfor %}</span><a href="#" id="more_tags">more...</a>
+{% get_meowr_tags as tag_list %}{% for tag in tag_list|slice:":10" %}<a href="/tags/{{ tag }}/">{{ tag }}</a> {% endfor %}
+<span id="more">{% for tag in tag_list|slice:"10:" %}<a href="/tags/{{ tag }}/">{{ tag }}</a> {% endfor %}</span><a href="#" id="more_tags">more...</a>
 </p>
 </div>
 <h3>Popular Posts</h3>

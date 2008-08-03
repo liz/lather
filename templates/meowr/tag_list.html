@@ -12,7 +12,7 @@
 <ul>
 {% load meowr tagging_tags %}
 {% get_meowr_tags as tag_list %}{% for tag in tag_list %}
-<li><a href="/tags/{{ tag }}">{{ tag }}</a></li>
+<li><a href="/tags/{{ tag }}/">{{ tag }}</a></li>
 {% endfor %}
 </ul>
 <div class="clear"></div>

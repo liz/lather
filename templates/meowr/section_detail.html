@@ -16,9 +16,9 @@
 <div class="clear"></div>
 <div class="cinemablock">
 {%ifequal section.kind 1 %}
-<h2>{{ section.title}} by Tag</h2>
+<h2>{{ section.title}} by <a href="/tags/">Tag</a></h2>
 <ul>
-{% load tagging_tags %}{% get_meowr_tags as tag_list %}{% for tag in tag_list %}<li><a href="/tags/{{ tag }}">{{ tag }}</a></li>{% endfor %}
+{% load tagging_tags %}{% get_meowr_tags as tag_list %}{% for tag in tag_list %}<li><a href="/tags/{{ tag }}/">{{ tag }}</a></li>{% endfor %}
 </ul>
 {% else %}
 <h2>{{ section.title}} by Rating</h2>
@@ -35,7 +35,7 @@
 <ul class="no_change">
 {% for object in object_list %}
 {% ifchanged %}
-<li class="month_title_small"><a href="/{{ object.pub_date|date:"Y" }}/{{ object.pub_date|date:"n" }}/">{{ object.pub_date|date:"F Y" }}</a></li>
+<li class="month_title_small"><a href="/{{ object.pub_date|date:"Y/n" }}/">{{ object.pub_date|date:"F Y" }}</a></li>
 {% endifchanged %}
 <li>{{ object.pub_date|date:"d" }}: <a href="{{ object.get_absolute_url }}">{{ object.title|cut:"*Cinema -- "|cut:"*Swag -- " }}</a></li>
 {% endfor %}
