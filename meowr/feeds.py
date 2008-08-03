@@ -38,10 +38,13 @@ class TaggedArticlesFeed(Feed):
 		return '/tags/%s/' % obj
 
 	def title(self, obj):
-		return 'Lather Rinse Repeat Feed for tag %s' % obj
+		return 'Lather Rinse Repeat - Tag %s' % obj
 
 	def description(self, obj):
-		return 'Lather Rinse Repeat Feed for tag %s' % obj
+		return 'Lather Rinse Repeat - Tag %s' % obj
+		
+	def item_pubdate(self, item):
+		return item.pub_date
 		
 		
 class SectionFeed(Feed):
@@ -56,7 +59,10 @@ class SectionFeed(Feed):
 		return '/%s/' % obj.slug
 
 	def title(self, obj):
-		return 'Lather Rinse Repeat Feed for %s' % obj
+		return 'Lather Rinse Repeat - %s' % obj
 
 	def description(self, obj):
-		return 'Lather Rinse Repeat Feed for %s' % obj
+		return 'Lather Rinse Repeat - %s' % obj
+		
+	def item_pubdate(self, item):
+		return item.pub_date
