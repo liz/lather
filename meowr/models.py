@@ -98,6 +98,12 @@ class Article(models.Model):
 		'slug': self.slug })
 	get_absolute_url = permalink(get_absolute_url)
 
+	def get_previous_article(self):
+		return self.get_previous_by_pub_date(status=1)
+    
+	def get_next_article(self):
+		return self.get_next_by_pub_date(status=1)
+		
 class Exit(models.Model):
 	title       = models.CharField(max_length=100)
 	slug        = models.SlugField(unique=True)
@@ -129,9 +135,3 @@ class ArticleModerator(CommentModerator):
 	close_after			= 30
 
 moderator.register(Article, ArticleModerator)
-
-def get_previous_post(self):
-    return self.get_previous_by_pub_date.filter(status=Article.LIVE_STATUS)
-
-def get_next_post(self):
-    return self.get_next_by_pub_date.filter(status=Article.LIVE_STATUS)
