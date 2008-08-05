@@ -44,10 +44,10 @@
 <dt>Navigate</dt>
 <dd>
 {% if object.get_previous_by_pub_date %}
-<a class="previous" href="{{ object.get_previous_by_pub_date.get_absolute_url }}">rewind</a> /
+<a class="previous" href="{{ object.get_previous_post.get_absolute_url }}">rewind</a> /
 {% endif %}
 {% if object.get_next_by_pub_date %}
- <a class="next" href="{{ object.get_next_by_pub_date.get_absolute_url }}">forward</a>
+ <a class="next" href="{{ object.get_next_post.get_absolute_url }}">forward</a>
 {% endif %}
 </dd>
 </dl>
