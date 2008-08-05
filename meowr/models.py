@@ -131,7 +131,7 @@ class ArticleModerator(CommentModerator):
 moderator.register(Article, ArticleModerator)
 
 def get_previous_post(self):
-    return self.get_previous_by_pub_date.filter(status=Article.LIVE_STATUS)
+    return self.get_previous_by_pub_date(status=LIVE_STATUS)
 
 def get_next_post(self):
-    return self.get_next_by_pub_date.filter(status=Article.LIVE_STATUS)
+    return self.get_next_by_pub_date(status=LIVE_STATUS)
