@@ -111,6 +111,7 @@ class Exit(models.Model):
 	cre_date    = models.DateTimeField(auto_now_add=True)
 	mod_date    = models.DateTimeField(auto_now=True)
 	url			= models.URLField(unique=True)
+	tags		= TagField()
 	
 	class Meta:
 	    verbose_name = 'exit'

@@ -40,7 +40,7 @@ class ArticleAdmin(admin.ModelAdmin):
 		
 class ExitAdmin(admin.ModelAdmin):
 	prepopulated_fields = {'slug': ('title',)}
-	search_fields = ('title',)
+	search_fields = ('title', 'tags')
 	
 class SectionAdmin(admin.ModelAdmin):
 	prepopulated_fields = {'slug': ('title',)} 
@@ -52,5 +52,3 @@ admin.site.register(Article, ArticleAdmin)
 admin.site.register(Section, SectionAdmin)
 admin.site.register(Rating, RatingAdmin)
 admin.site.register(Exit, ExitAdmin)
-admin.site.register(Tag)
-admin.site.register(TaggedItem)
