@@ -63,7 +63,11 @@
 {% for comment in tree %}
 <div class="comment-shape">
 <li id="comment-{{ comment.id }}">
+{%ifequal comment.email 'liz@latherrinserepeat.org' %}
+<cite style="border-color:#999;">
+{% else %}
 <cite>
+{% endifequal %}
 <span class="author">{% if comment.website %}<a href="{{ comment.website }}">{{ comment.name }}</a>{% else %}{{ comment.name }}{% endif %}</span>
 <span class="date">{{ comment.date_submitted|date:"n.j.y / ga" }}</span>
 </cite>

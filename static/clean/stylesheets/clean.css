@@ -152,7 +152,7 @@ div.comment-shape{width:100%;padding-top:15px;padding-bottom:30px;text-align:lef
 ol#comments{padding-bottom:25px;}
 ol#comments li{}
 #comments cite{font-style:normal;float:left;width:110px;text-align:right;border-right: 1px solid #dddddc;padding:0 3% 0 3%;margin:13px 3% 5% 3%;}
-#comments cite .date {text-transform:lowercase;}
+#comments cite .date{text-transform:lowercase;}
 #comments cite span{display:block;}
 .said{float:left;width:65%;}
 .gravatar{float:right;vertical-align:bottom;padding:4px;border: 1px solid #ccd;margin:0 10px 0 20px;}
