@@ -93,7 +93,7 @@ div.content h3{font-size:1.6em;font-weight:lighter;line-height:3;color:#8D969E;m
 div#extra h3{font-size:1.3em; color:#8D969E;font-weight:lighter;line-height:1.8;margin-top:1.2em;margin-bottom:5px;text-decoration:none;}
 div#extra h3 a{color:#8D969E;}
 div#extra h3 a:hover{color:#66A4DE;}
-h2{font-size:1.7em;color:#8D969E;font-weight:lighter;padding-top:8px;padding-bottom:18px;clear:both;}
+h2{font-size:1.7em;color:#8D969E;font-weight:lighter;padding-top:8px;padding-bottom:18px;}
 h2 a{color:#8D969E;}
 h1 .special{color:#8D969E;}
 
@@ -167,6 +167,7 @@ div.cinemadateblock{float:left;width:30%;margin:0 0 0 1%;padding-bottom:0;}
 
 div.exits{text-align:justify;padding-right:10%;}
 div.exits ul li{float:left;margin:0 15px 12px 15px;padding:0;}
+div.exits .exit_tag{font-size:1.7em;color:#8D969E;font-weight:lighter;padding-top:8px;padding-bottom:18px;clear:both;margin-left:0;display:block;float:none;}
 
 .spoiler{background:#666;color:#666;}
 

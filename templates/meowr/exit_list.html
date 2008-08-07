@@ -9,11 +9,11 @@
 <div id="siteblock">
 <div class="clear"></div>
 <div class="exits">
+<ul>
 {% for object in object_list %}
 {% ifchanged %}
-<h2>{{ object.tags|capfirst }}</h2>
+<li class="exit_tag">{{ object.tags|capfirst }}</li>
 {% endifchanged %}
-<ul>
 <li><a href="{{ object.url }}">{{ object.title }}</a></li>
 {% endfor %}
 </ul>
