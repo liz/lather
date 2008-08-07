@@ -7,12 +7,17 @@
 <h1>The Exit</h1>
 {% load meowr %}
 <div id="siteblock">
-<div class="dates">
-<ul>
+<div class="clear"></div>
+<div class="exits">
 {% for object in object_list %}
+{% ifchanged %}
+<h2>{{ object.tags|capfirst }}</h2>
+{% endifchanged %}
+<ul>
 <li><a href="{{ object.url }}">{{ object.title }}</a></li>
 {% endfor %}
 </ul>
+<div class="clear"></div>
 </div>
 </div>
 </div>
