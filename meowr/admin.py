@@ -1,6 +1,5 @@
 from django.contrib import admin
 from meowr.models import Article, Exit, Section, Rating
-from tagging.models import Tag, TaggedItem
 
 class ArticleAdmin(admin.ModelAdmin):
 	prepopulated_fields = {'slug': ('title',)} 
