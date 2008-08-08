@@ -11,9 +11,8 @@
 <div class="exits">
 <ul>
 {% for object in object_list %}
-{% ifchanged %}
-<li class="exit_tag">{{ object.tags|capfirst }}</li>
-{% endifchanged %}
+{% ifchanged %}{% load tagging_tags %}{% tags_for_object object as tag_list %}{% for tag in tag_list %}
+<li class="exit_tag">{{ tag|title }}</li>{% endfor %}{% endifchanged %}
 <li><a href="{{ object.url }}">{{ object.title }}</a></li>
 {% endfor %}
 </ul>

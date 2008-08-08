@@ -1,6 +1,6 @@
 {% extends "base.html" %}{% load typogrify %}
 
-<title>{% block title %}{{ block.super }} -  {{ tag.name|capfirst }} {% endblock %}</title>
+<title>{% block title %}{{ block.super }} -  {{ tag.name|title }} {% endblock %}</title>
 
 {% block feeds %}
 {{ block.super }}
@@ -10,7 +10,7 @@
 {% block content %}
 <div id="bigbox">
 <div class="clear"></div>
-<h1>Tag <span class="special">{{ tag.name|capfirst }}</a></h1>
+<h1>Tag <span class="special">{{ tag.name|title }}</a></h1>
 </div>
 {% for object in object_list %}
 <div class="wrapper">
