@@ -46,7 +46,7 @@ class MeowrExits(template.Node):
     self.var_name = var_name
 
   def render(self, context):
-    exits = Exit.objects.all().order_by('?')[0:4]
+    exits = Exit.objects.filter(tags='people').order_by('?')[0:4]
     context[self.var_name] = exits
     return ''
 
