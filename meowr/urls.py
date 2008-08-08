@@ -33,7 +33,7 @@ urlpatterns = patterns('django.views.generic',
  
 	 url(r'^$', 'list_detail.object_list', article_list_dict, name='article_index'),
 	
-	 url(r'^exits/$', 'list_detail.object_list',  dict(queryset=Exit.objects.all(), paginate_by=100), name='exit_list'),
+	 url(r'^exits/$', 'list_detail.object_list',  dict(queryset=Exit.objects.order_by('-tags', 'title'), paginate_by=100), name='exit_list'),
 	
 	 url(r'^tags/$', 'list_detail.object_list', dict(queryset=Tag.objects.all(), paginate_by=100, template_name='meowr/tag_list.html')),
 	
