@@ -9,6 +9,7 @@ from syncr.twitter.models import Tweet
 from syncr.delicious.models import Bookmark
 from tagging.templatetags import tagging_tags
 import re
+import datetime
 Article = models.get_model('meowr', 'article')
 Section = models.get_model('meowr', 'section')
 Exit = models.get_model('meowr', 'exit')
@@ -147,3 +148,12 @@ def do_get_meowr_bookmarks(parser, token):
     raise template.TemplateSyntaxError, "%s tag had invalid arguments" % tag_name
   var_name = m.groups()[0]
   return MeowrBookmarks(var_name)
+
+@register.filter
+def showcomments( date ):
+    date_adjusted = date + datetime.timedelta( days=30 )
+
+    if datetime.datetime.now() <= date_adjusted:
+        return True
+
+    return False

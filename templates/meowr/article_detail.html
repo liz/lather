@@ -75,6 +75,7 @@
 {% endfor %}
 </ol>
 {%ifequal object.enable_comments 1 %}
+{% if object.pub_date|showcomments %}
 <h2>Leave a Comment!</h2>
 <div id="commentness">
 <p>Line and paragraph breaks automatic, e-mail addresses never displayed, and please feel free to use <a href="http://daringfireball.net/projects/markdown/">Markdown</a>.</p>
@@ -94,6 +95,9 @@
 </p>
 </form>
 </div>
+{% else %}
+<h3>Comments are closed for this article.</h3>
+{% endif %}
 {% else %}
 <h3>Comments are closed for this article.</h3>
 {% endifequal %}
