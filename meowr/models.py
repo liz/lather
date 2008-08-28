@@ -132,7 +132,7 @@ class ArticleModerator(CommentModerator):
 	akismet 			= True
 	enable_field 		= 'enable_comments'
 	email_notification 	= True
-	auto_moderate_field	= 'pub_date'
-	moderate_after		= 30
+	auto_close_field	= 'pub_date'
+	close_after			= 30
 
 moderator.register(Article, ArticleModerator)

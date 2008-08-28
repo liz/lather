@@ -12,7 +12,7 @@ article_info_dict = {
 
 article_list_dict = {
 	'queryset':	 Article.objects.filter(status=Article.LIVE_STATUS),
-	'paginate_by': 6,
+	'paginate_by': 7,
 }
 
 urlpatterns = patterns('django.views.generic',
