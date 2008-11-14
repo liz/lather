@@ -19,7 +19,7 @@ div#footer p{margin:0;padding-top:90px;padding-left:20px;text-align:left;font-si
 div#footer a{color:#000;font-weight:bold;}
 div#footer a:hover{color:#fff;}
 div#footer .f-left{float:left;}
-.django-pony{margin-left:290px;vertical-align:top;margin-top:-160px;}
+.django-pony{margin-left:280px;vertical-align:top;margin-top:-150px;}
 
 div#nav-padding{padding-top:170px;padding-left:510px;}
 div#nav{background:url(/static/clean/images/nav-bg.png) no-repeat;width:450px;height:36px;}
