@@ -63,7 +63,7 @@ div.col{width:28%;float:left;margin:0 5% 0 0;text-align:left;}
 div.content img{padding:5px;border: 1px solid #ccd;}
 div.content a img:hover{background:#eee;}
 .show{visibility:visible;}
-.tags p{margin:0 0 0 8%;padding:0;}
+.tags p{margin:0;padding:0;}
 #more{}
 div#extra #more_tags{font-style:italic;color:#8D969E;}
 div#extra #more_tags:hover{color:#66A4DE;}
