@@ -19,6 +19,7 @@ div#footer p{margin:0;padding-top:90px;padding-left:20px;text-align:left;font-si
 div#footer a{color:#000;font-weight:bold;}
 div#footer a:hover{color:#fff;}
 div#footer .f-left{float:left;}
+.django-pony{margin-left:290px;vertical-align:top;margin-top:-160px;}
 
 div#nav-padding{padding-top:170px;padding-left:510px;}
 div#nav{background:url(/static/clean/images/nav-bg.png) no-repeat;width:450px;height:36px;}
@@ -105,7 +106,7 @@ h1 .special{color:#8D969E;}
 .white{color:#fff;}
 img, img a{border:0;}
 
-li{margin-left:8%;list-style-type:none;}
+li{list-style-type:none;}
 
 
 .search{margin-left:4%;}
