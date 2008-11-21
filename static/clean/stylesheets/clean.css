@@ -12,7 +12,7 @@ div#toggle{padding-left:241px;padding-top:8px;}
 div#toggle img, div#toggle img a{border:0;}
 div#toggle a{display:block;background:url(/static/clean/images/heart_toggle_full.png);width:100px;height:70px;}
 div#toggle a:hover{background-position:0 -79px;}
-div#main{background:url(/static/clean/images/tree.png) repeat-y;}
+div#main{background:url(/static/clean/images/tree.png) repeat-y;padding-bottom:60px;}
 div#footer{background:url(/static/clean/images/footer.png) repeat-x bottom left;height:114px;}
 div#footer img{display:inline;vertical-align:top;border:0;}
 div#footer p{margin:0;padding-top:90px;padding-left:20px;text-align:left;font-size:.8em;}
