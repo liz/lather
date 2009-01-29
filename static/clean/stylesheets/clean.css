@@ -24,6 +24,7 @@ div#footer .f-left{float:left;}
 div#nav-padding{padding-top:170px;padding-left:510px;}
 div#nav{background:url(/static/clean/images/nav-bg.png) no-repeat;width:450px;height:36px;}
 div#menu{padding-top:10px;padding-left:63px;}
+div#menu ul{padding-left:0;}
 div#menu ul li{margin:0;padding:0;}
 .index{background:url(/static/clean/images/nav-index.png) no-repeat;float:left;display:block;width:39px;height:11px;margin:0;padding:0;}
 .girl{background:url(/static/clean/images/nav-girl.png) no-repeat;float:left;display:block;width:29px;height:11px;margin:0;padding:0;}
@@ -107,6 +108,7 @@ h1 .special{color:#8D969E;}
 img, img a{border:0;}
 
 li{list-style-type:none;}
+ul{padding-left:6%;}
 
 
 .search{margin-left:4%;}
@@ -174,5 +176,5 @@ div.exits .exit_tag{font-size:1.7em;color:#8D969E;font-weight:lighter;padding-to
 
 pre{padding:1em 0;overflow:hidden;border-top:1px dotted #ccd;border-bottom:1px dotted #ccd;}
 pre, code{font-family:"Monaco", "Courier New", Courier;font-size:10px;}
-blockquote{margin:2em 0 2.3em 8%;font-style:italic;color:#556;}
+blockquote{margin:2em 10% 2.3em 8%;font-style:italic;color:#556;}
 .caption{margin:-40px 0 2em 8%;display:block;}
