@@ -43,6 +43,7 @@ div#nav a{display:block;}
 div.wrapper{float:left;width:100%;padding-bottom:80px;}
 div.content{margin-left:355px;padding-right:10%;padding-left:30px;background:url(/static/clean/images/content-bg.png) no-repeat;}
 div.content .excerpt{text-align:right;padding-right:30px;}
+ul{padding-left:6%;}
 ul li{line-height:1.6em;}
 div.meta{font-size:.9em;float:left;width:215px;margin-left:-100%;line-height:1.8;padding-left:140px;background:url(/static/clean/images/metabg.png) no-repeat 80px bottom;padding-bottom:85px;padding-top:2px;}
 div.meta dt, div.meta dd{display:inline;}
