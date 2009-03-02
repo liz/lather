@@ -1,6 +1,7 @@
 *{margin:0;padding:0;border:0;}
 html,body{background:#fff;margin:0;padding:0}
 body{font: .8em Helvetica, Arial, sans-serif;color:#555;line-height:1.8em;font-weight:lighter;}
+strong{font-weight:bold;}
 a{color:#8D969E;text-decoration:none;}
 a:hover{color:#66A4DE;}
 p{margin:1.2em 1.2em 1.2em 0;}
@@ -114,7 +115,7 @@ ul{padding-left:6%;}
 
 .search{margin-left:4%;}
 input#s{border: 1px solid #eee;width:165px;background:#eee;margin:10px 0 10px 10px;font: 1em Helvetica, Arial, sans-serif;color:#333;line-height:1.8em;height:20px;}
-input#id_q{border: 1px solid #eee;width:175px;background:#eee;margin:10px 0 10px 10px;font: 1em Helvetica, Arial, sans-serif;color:#333;line-height:1.8em;height:20px;}
+input#id_q{border: 1px solid #eee;width:190px;background:#eee;margin:10px 0 10px 10px;font: 1em Helvetica, Arial, sans-serif;color:#333;line-height:1.8em;height:20px;}
 input#search{border: 1px solid #ccd;width:22px;background:#fff;margin:10px;font: .8em Helvetica, Arial, sans-serif;color:#443;line-height:1.8em;height:22px;vertical-align:middle;padding:2px;}
 .dates li{line-height:2.3em;}
 .tags_section{float:left;padding-right:50px;}

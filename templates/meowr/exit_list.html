@@ -15,6 +15,14 @@
 <li class="exit_tag">{{ tag|title }}</li>{% endfor %}{% endifchanged %}
 <li><a href="{{ object.url }}">{{ object.title }}</a></li>
 {% endfor %}
+<li class="exit_tag">Recent</li>
+{% load typogrify %}
+{% load meowr %}
+{% get_meowr_bookmarks as bookmark_list %}
+{% for bookmark in bookmark_list %}
+<li><a href="{{ bookmark.url }}">{{ bookmark.description }}</a></li>
+{% endfor %}
+<li><a href="http://delicious.com/tricky/">More del.icio.us bookmarks...</a></li>
 </ul>
 <div class="clear"></div>
 </div>
