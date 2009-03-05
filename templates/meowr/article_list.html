@@ -13,7 +13,7 @@
 {% endif %}
 </div>
 </div>
-<div class="{% cycle meta1,meta2,meta3,meta3 as metas %}">
+<div class="{% cycle meta1,meta2,meta3 as metas %}">
 <dl class="posted">
 <dt><a href="{{ object.get_absolute_url }}" title="{{ article.title}}"><span class="special">Posted</span> {{ object.pub_date|timesince }} ago{% comment %}{{ object.pub_date|date:"F j, Y" }}{% endcomment %}</a></dt>
 </dl>
