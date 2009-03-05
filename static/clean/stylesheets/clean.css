@@ -50,9 +50,11 @@ ul li{line-height:1.6em;}
 div.meta{font-size:.9em;float:left;width:215px;margin-left:-100%;line-height:1.8;padding-left:140px;background:url(/static/clean/images/metabg.png) no-repeat 80px bottom;padding-bottom:85px;padding-top:2px;}
 div.meta1{font-size:.9em;float:left;width:215px;margin-left:-100%;line-height:1.8;padding-left:140px;background:url(/static/clean/images/metabg.png) no-repeat 80px bottom;padding-bottom:85px;padding-top:2px;}
 div.meta2{font-size:.9em;float:left;width:215px;margin-left:-100%;line-height:1.8;padding-left:140px;background:url(/static/clean/images/metabg3.png) no-repeat 80px bottom;padding-bottom:85px;padding-top:2px;}
+div.meta3{font-size:.9em;float:left;width:215px;margin-left:-100%;line-height:1.8;padding-left:140px;background:url(/static/clean/images/metabg2.png) no-repeat 80px bottom;padding-bottom:85px;padding-top:2px;}
 div.meta dt, div.meta dd{display:inline;}
 div.meta1 dt, div.meta1 dd{display:inline;}
 div.meta2 dt, div.meta2 dd{display:inline;}
+div.meta3 dt, div.meta3 dd{display:inline;}
 div#extra{font-size:.9em;clear:left;text-align:left;background:url(/static/clean/images/tree.png) repeat-y;color:#8D969E;height:300px;}
 div#extra p, div#extra ul li{line-height:1.6em;padding-bottom:.2em;}
 div#extra a{color:#554;}
