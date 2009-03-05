@@ -71,7 +71,7 @@ div.content img{padding:5px;border: 1px solid #ccd;}
 div.content a img:hover{background:#eee;}
 .show{visibility:visible;}
 .tags p{margin:0;padding:0;}
-#more{}
+#more{height:150px;}
 div#extra #more_tags{font-style:italic;color:#8D969E;}
 div#extra #more_tags:hover{color:#66A4DE;}
 a#extra_hide{color:#8D969E;}
