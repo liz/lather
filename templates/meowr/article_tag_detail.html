@@ -24,7 +24,7 @@
 {% endif %}
 </div>
 </div>
-<div class="meta">
+<div class="{% cycle meta1,meta2 as metas %}">
 <dl class="posted">
 <dt><a href="{{ article.url }}" title="{{ article.title}}"><span class="special">Posted</span> {{ object.pub_date|date:"F j, Y" }}</a></dt>
 </dl>
