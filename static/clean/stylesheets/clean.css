@@ -49,7 +49,7 @@ ul{padding-left:6%;}
 ul li{line-height:1.6em;}
 div.meta{font-size:.9em;float:left;width:215px;margin-left:-100%;line-height:1.8;padding-left:140px;background:url(/static/clean/images/metabg.png) no-repeat 80px bottom;padding-bottom:85px;padding-top:2px;}
 div.meta dt, div.meta dd{display:inline;}
-div#extra{font-size:.9em;clear:left;width:100%;text-align:left;background:url(/static/clean/images/tree.png) repeat-y;padding-bottom:50px;color:#8D969E;}
+div#extra{font-size:.9em;clear:left;text-align:left;background:url(/static/clean/images/tree.png) repeat-y;color:#8D969E;height:200px;}
 div#extra p, div#extra ul li{line-height:1.6em;padding-bottom:.2em;}
 div#extra a{color:#554;}
 div#extra a:hover{color:#66A4DE;}
@@ -61,7 +61,7 @@ div.meta .posted a{color:#323232;}
 div.meta .posted a .special{color:#8D969E;}
 div.meta .posted:hover{text-decoration:underline;color:#ddd;}
 .rating{vertical-align:text-bottom;width:69px;height:12px;}
-div#middle{width:78%;margin:0 auto;padding-left:50px;height:200px;}
+div#middle{width:78%;margin:0 auto;padding-left:50px;}
 div.col{width:28%;float:left;margin:0 5% 0 0;text-align:left;}
 div.content img{padding:5px;border: 1px solid #ccd;}
 div.content a img:hover{background:#eee;}
