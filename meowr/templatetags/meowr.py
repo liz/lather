@@ -112,7 +112,7 @@ class MeowrTweets(template.Node):
     self.var_name = var_name
 
   def render(self, context):
-    tweets = Tweet.objects.all()[0:1]
+    tweets = Tweet.objects.order_by('-pub_time')[0:1]
     context[self.var_name] = tweets
     return ''
 

@@ -11,7 +11,7 @@
 <ul class="no_change">
 {% get_meowr_tweets as tweet_list %}
 {% for tweet in tweet_list %}
-<li>{{ tweet.text|safe }} <a href="{{ tweet.url }}">about {{ tweet.pub_time|timesince }} ago</a></li>
+<li>{{ tweet.text|safe }} <a href="{{ tweet.url }}">about {{ tweet.local_pub_time|timesince }} ago</a></li>
 {% endfor %}
 </ul>
 </div>
