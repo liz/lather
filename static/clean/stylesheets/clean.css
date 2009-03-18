@@ -22,9 +22,9 @@ div#footer a:hover{color:#fff;}
 div#footer .f-left{float:left;}
 .django-pony{margin-left:280px;vertical-align:top;margin-top:-150px;}
 
-div#nav-padding{padding-top:170px;padding-left:510px;}
+div#nav-padding{padding-top:170px;padding-left:580px;}
 div#nav{background:url(/static/clean/images/nav-bg.png) no-repeat;width:450px;height:36px;}
-div#menu{padding-top:10px;padding-left:63px;}
+div#menu{padding-top:10px;padding-left:55px;}
 div#menu ul{padding-left:0;}
 div#menu ul li{margin:0;padding:0;}
 .index{background:url(/static/clean/images/nav-index.png) no-repeat;float:left;display:block;width:39px;height:11px;margin:0;padding:0;}
