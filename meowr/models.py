@@ -38,7 +38,7 @@ class Rating(models.Model):
 
 	class Meta:
 		verbose_name = 'rating'
-		ordering = ['title']
+		ordering = ['id']
 		
 	def __unicode__(self):
 		return self.title
