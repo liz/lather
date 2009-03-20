@@ -15,9 +15,9 @@ urlpatterns = patterns('',
     # Example:
     # (r'^lather/', include('lather.foo.urls')),
 
-	 url(r'^admin/meowr/article/(?P<object_id>[0-9]+)/preview/$', 'meowr.views.preview'),
-	
 	 url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
+
+	 url(r'^admin/meowr/article/(?P<object_id>[0-9]+)/preview/$', 'meowr.views.preview'),
 	
 	 url(r'^admin/(.*)', admin.site.root),
 	
