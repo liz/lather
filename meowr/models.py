@@ -38,7 +38,7 @@ class Rating(models.Model):
 
 	class Meta:
 		verbose_name = 'rating'
-		ordering = ['id']
+		ordering = ['title']
 		
 	def __unicode__(self):
 		return self.title
@@ -57,8 +57,8 @@ class Article(models.Model):
 	HIDDEN_STATUS = 3
 	
 	STATUS_CHOICES = (
-    (1, 'live'),
     (2, 'draft'),
+    (1, 'live'),
 	(3, 'hidden'),
   )
 	title 			= models.CharField(max_length=250)
@@ -68,7 +68,7 @@ class Article(models.Model):
 	pub_date 		= models.DateTimeField(default=datetime.datetime.now)
 	cre_date        = models.DateTimeField(auto_now_add=True)
 	mod_date        = models.DateTimeField(auto_now=True)
-	status 			= models.IntegerField(choices=STATUS_CHOICES, default=1)
+	status 			= models.IntegerField(choices=STATUS_CHOICES, default=2)
 	author 			= models.ForeignKey(User, default=1)
 	sections		= models.ManyToManyField(Section, default="articles")
 	tags			= TagField()
