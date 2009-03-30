@@ -26,7 +26,7 @@ div#nav-padding{padding-top:170px;padding-left:580px;}
 div#nav{background:url(/static/clean/images/nav-bg.png) no-repeat;width:450px;height:36px;}
 div#menu{padding-top:10px;padding-left:55px;}
 div#menu ul{padding-left:0;}
-div#menu ul li{margin:0;padding:0;}
+div#menu ul li{margin:0;padding:0;float:left;}
 .index{background:url(/static/clean/images/nav-index.png) no-repeat;float:left;display:block;width:39px;height:11px;margin:0;padding:0;}
 .girl{background:url(/static/clean/images/nav-girl.png) no-repeat;float:left;display:block;width:29px;height:11px;margin:0;padding:0;}
 .site{background:url(/static/clean/images/nav-site.png) no-repeat;float:left;display:block;width:32px;height:11px;margin:0;padding:0;}
@@ -37,7 +37,7 @@ div#menu ul li{margin:0;padding:0;}
 .rss{background:url(/static/clean/images/nav-rss.png) no-repeat;float:left;display:block;width:29px;height:11px;margin:0;padding:0;}
 .exit{background:url(/static/clean/images/nav-exit.png) no-repeat;float:left;display:block;width:18px;height:11px;margin:0;padding:0;}
 div#nav a:hover{background-position:0 -14px;}
-div#nav a{display:block;}
+div#nav a{display:block;float:left;}
 
 .feed a{display:inline-block;background:url(/static/clean/images/rss.png) no-repeat;width:16px;height:16px;margin-left:5px;}
 .feed a:hover{background-position:0 -20px;}
