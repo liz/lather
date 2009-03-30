@@ -73,7 +73,7 @@ div.content img{padding:5px;border: 1px solid #ccd;}
 div.content a img:hover{background:#eee;}
 .show{visibility:visible;}
 .tags p{margin:0;padding:0;}
-#more{height:180px;}
+#more{height:240px;}
 div#extra #more_tags{font-style:italic;color:#8D969E;}
 div#extra #more_tags:hover{color:#66A4DE;}
 a#extra_hide{color:#8D969E;}
@@ -123,7 +123,7 @@ ul{padding-left:6%;}
 input#s{border: 1px solid #eee;width:165px;background:#eee;margin:10px 0 10px 10px;font: 1em Helvetica, Arial, sans-serif;color:#333;line-height:1.8em;height:20px;}
 input#id_q{border: 1px solid #eee;width:190px;background:#eee;margin:10px 0 10px 10px;font: 1em Helvetica, Arial, sans-serif;color:#333;line-height:1.8em;height:20px;}
 input#search{border: 1px solid #ccd;width:22px;background:#fff;margin:10px;font: .8em Helvetica, Arial, sans-serif;color:#443;line-height:1.8em;height:22px;vertical-align:middle;padding:2px;}
-.dates li{line-height:2.3em;}
+.dates li{line-height:2em;}
 .tags_section{float:left;padding-right:50px;}
 .tags_section2{float:left;}
 
@@ -170,7 +170,7 @@ ol#comments li{}
 .gravatar:hover{border-color:#999;background:#eee}
 
 .month_title{font-size:1.5em;font-weight:lighter;line-height:3;color:#8D969E;margin:0;padding:0;line-height:1.8em;}
-.month_title_small,.month_title_small a{font-size:1.1em;font-weight:lighter;line-height:1.6;color:#554;margin:0;padding:0;}
+.month_title_small,.month_title_small a{font-size:1.1em;font-weight:lighter;line-height:2em;color:#554;margin:0;padding:0;}
 .month_title_small a:hover{color:#66A4DE;}
 
 div.cinemablock{float:left;width:30%;margin:0 0 0 1%;padding-bottom:0;}
@@ -182,7 +182,7 @@ div.exits .exit_tag{font-size:1.7em;color:#8D969E;font-weight:lighter;padding-to
 
 .spoiler{background:#666;color:#666;}
 
-pre{padding:1em 0;overflow:hidden;border-top:1px dotted #ccd;border-bottom:1px dotted #ccd;}
+pre{padding:1em 0;overflow:auto;border-top:1px dotted #ccd;border-bottom:1px dotted #ccd;}
 pre, code{font-family:"Monaco", "Courier New", Courier;font-size:10px;}
 blockquote{margin:2em 10% 2.3em 8%;font-style:italic;color:#556;}
 .caption{margin:-40px 0 2em 8%;display:block;}
