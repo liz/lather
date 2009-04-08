@@ -19,6 +19,8 @@ $('a#more_tags').click(function() {
   return false;
 });
 
+$("img").pngfix();
+
 $('a[rel*=lightbox]').fancybox(); 
 
 var color_classes = new Array("star1", "star2", "star3", "star4", "star5")
