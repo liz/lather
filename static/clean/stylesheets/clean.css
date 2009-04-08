@@ -55,7 +55,7 @@ div.meta dt, div.meta dd{display:inline;}
 div.meta1 dt, div.meta1 dd{display:inline;}
 div.meta2 dt, div.meta2 dd{display:inline;}
 div.meta3 dt, div.meta3 dd{display:inline;}
-div#extra{font-size:.9em;clear:left;text-align:left;background:url(/static/clean/images/tree.png) repeat-y;color:#8D969E;height:300px;}
+div#extra{font-size:.9em;clear:left;text-align:left;background:url(/static/clean/images/tree.png) repeat-y;color:#8D969E;height:300px;display:none;}
 div#extra p, div#extra ul li{line-height:1.6em;padding-bottom:.2em;}
 div#extra a{color:#554;}
 div#extra a:hover{color:#66A4DE;}
