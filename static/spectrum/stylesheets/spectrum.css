@@ -27,7 +27,7 @@ a:hover{text-decoration:underline;}
 #fancytitle:hover{background:url(/static/spectrum/images/fancytitle.gif) no-repeat 0 -55px;}
 /* #menu{font-size:1.1em;float:right;clear:both;} */
 
-#dark-color .main #menu{float:left;font-size:1.2em;margin-left:-9em;margin-top:.1em;}
+#dark-color .main #menu{float:left;font-size:1.2em;margin-left:-9em;margin-top:.5em;}
 #dark-color .main #menu ul{}
 #dark-color .main #menu ul li{display:inline;list-style-type:none;padding-right:1em;}
 #dark-color .main #menu a{text-decoration:none;color:#537aa0;}
@@ -38,7 +38,7 @@ a:hover{text-decoration:underline;}
 #dark-color{background:#eee;}
 #dark-color:hover{}
 #dark-color .main{background:#fff url(/static/spectrum/images/boxes_animated.gif) no-repeat right top;margin:0 1em;border-bottom:.5em solid #eee;font-weight:normal;padding:.5em 2em 1em;}
-#dark-color .main #area{width:950px;text-align:center;margin-top:5em;margin-left:auto;margin-right:auto;}
+#dark-color .main #area{width:950px;text-align:center;margin-top:6.5em;margin-left:auto;margin-right:auto;}
 #twitter-topper{clear:both;color:#fff;background:#bac9d5;height:60px;padding-right:1em;cursor:pointer;border-top:1px solid #fff;}
 #twitter-topper:hover{}
 #twitter-color{overflow-x: hidden;background:#bac9d5;width:100%;}
