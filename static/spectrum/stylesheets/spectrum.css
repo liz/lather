@@ -235,7 +235,7 @@ ol#comments li{list-style-type:none;}
 .cinemadateblock ul li{}
 .month_title_small, .month_title_small a{text-decoration:none;font-size:1.1em;color:#bbb;margin-top:.75em;margin-bottom:}
 .month_title_small a:hover{color:#292929;}
-.older-newer{text-align:right;margin-right:3em;}
+.older-newer{text-align:right;margin-right:3em;font-size:1.2em;}
 .ratingblock{margin-bottom:2em;}
 .ratingblock p{text-align:center;}
 
