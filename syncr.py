@@ -1,9 +1,8 @@
 import sys, os
 os.environ['DJANGO_SETTINGS_MODULE'] = 'spectrum.settings'
-from django.contrib.contenttypes.models import ContentType
 import settings
-setup_environ(settings)
 from django.conf import settings
+
 
 from syncr.app.delicious import DeliciousSyncr
 d = DeliciousSyncr(settings.DELICIOUS_USER, settings.DELICIOUS_PASS)
