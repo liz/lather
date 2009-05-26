@@ -8,6 +8,10 @@ urls.pyc
 __init__.pyc
 static/images
 static/files
+tumblr/
+tumblr/*
+lastfm/
+lastfm/*
 __init__.pyc
 meowr/__init__.pyc
 meowr/feeds.pyc

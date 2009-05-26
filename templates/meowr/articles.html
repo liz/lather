@@ -1,0 +1,60 @@
+{% load typogrify %}
+{% for object in object_list %}
+<div class="wrapper">
+<div class="content">
+<h1><a href="{{ object.get_absolute_url }}">{{ object.title|typogrify|safe }}</a></h1>
+{% if object.excerpt_html %}
+{{ object.excerpt_html|typogrify|safe }}
+<p class="excerpt"><a href="{{ object.get_absolute_url }}#body">(Read the rest)</a></p>
+{% else %}
+{{ object.body_html|typogrify|safe }}
+{% endif %}
+</div>
+</div>
+<div class="meta">
+<dl class="posted">
+<dt><a href="{{ object.get_absolute_url }}" title="{{ article.title}}"><span class="special">Posted</span> {{ object.pub_date|timesince }} ago{% comment %}{{ object.pub_date|date:"F j, Y" }}{% endcomment %}</a></dt>
+</dl>
+{% if object.tags %}
+<dl>
+<dt>Tags</dt>
+{% load tagging_tags %}
+<dd>
+{% tags_for_object object as tag_list %}{% for tag in tag_list %}<a href="/tags/{{ tag }}/">{{ tag }}</a>{% if forloop.last %}{% else %}{%ifequal forloop.revcounter0 1 %} and {% else %}, {% endifequal %}{% endif %}{% endfor %}
+</dd>
+</dl>
+{% endif %}
+{% if object.rating.all %}
+<dl>
+<dt>Rating</dt>
+{% load meowr %}
+<dd>
+{% for rating in object.rating.all %}
+<a href='/ratings/{{ rating.slug }}/' title='{{ rating.dscription }}'><img src='/static/spectrum/images/rating/{{ rating.slug }}.gif' class='rating' alt='{{ rating.description }}' /></a>{% endfor %}</dd>
+</dl>
+{% endif %}
+{% if object.enable_comments %}
+<dl>
+<dt>Comment</dt>
+<dd>
+{% load threadedcommentstags %}
+{% get_free_comment_count for object as comment_count %}
+{% ifnotequal comment_count 0 %}<a href="{{ object.get_absolute_url }}#commenting">{{ comment_count }} comment{{ comment_count|pluralize }}</a>{% else %}<a href="{{ object.get_absolute_url }}#commenting">Post a comment!</a>{% endifnotequal %}
+</dd>
+</dl>
+{% endif %}
+<dl>
+<dt>Navigate</dt>
+<dd>
+{% if object.get_previous_article %}
+<a class="ajaxLoad" href="{{ object.get_previous_article.get_absolute_url }}">rewind</a>
+{% endif %} / 
+{% if object.get_next_article %}
+<a class="ajaxLoad" href="{{ object.get_next_article.get_absolute_url }}">forward</a>
+{% endif %}
+</dd>
+</dl>
+</div>
+<div class="clear"></div>
+{% endfor %}
+</div>
