@@ -13,7 +13,7 @@ strong{font-weight:bold;}
 a{color:#537aa0;text-decoration:none;font-weight:normal;font-style:normal;}
 a:hover{text-decoration:underline;}
 #container{}
-#header{background-color:#d3dbe5;color:#959595;height:145px;padding:.25px .25px 0;font-weight:lighter;font-size:2.5em;}
+#header{background-color:#eee;color:#959595;height:145px;padding:.25px .25px 0;font-weight:lighter;font-size:2.5em;}
 #birdy{background-image:url(/static/spectrum/images/birdy.gif);width:127px;height:72px;margin-top:.1em;float:left;}
 #maintitle{width:495px;height:64px;background:url(/static/spectrum/images/maintitle.gif) no-repeat;margin-left:.3em;;margin-top:.6em;display:block;float:left;}
 #maintitle:hover{background-position:0 -86px;}
@@ -34,9 +34,9 @@ a:hover{text-decoration:underline;}
 
 .color-box{}
 
-#dark-color{background:#d3dbe5;}
+#dark-color{background:#eee;}
 #dark-color:hover{}
-#dark-color .main{background:#fff url(/static/spectrum/images/boxes_animated.gif) no-repeat right top;margin:0 1em;border-bottom:.5em solid #d3dbe5;font-weight:normal;padding:.5em 2em 1em;}
+#dark-color .main{background:#fff url(/static/spectrum/images/boxes_animated.gif) no-repeat right top;margin:0 1em;border-bottom:.5em solid #eee;font-weight:normal;padding:.5em 2em 1em;}
 #dark-color .main #area{width:950px;text-align:center;margin-top:5em;margin-left:auto;margin-right:auto;}
 #twitter-topper{clear:both;color:#fff;background:#bac9d5;height:60px;padding-right:1em;cursor:pointer;border-top:1px solid #fff;}
 #twitter-topper:hover{}
@@ -166,6 +166,8 @@ ul li{margin-top:.8em;}
 .pimg img{margin-right:auto;margin-left:auto;text-align:center;}
 .rating{width:69px;height:12px;opacity:0.85;margin-top:.3em;}
 .rating:hover{opacity:1;}
+.content img{padding:.5em;border:1px #ddd solid;}
+.content a img:hover{background:#efefef;}
 
 #dark-color .main h1{color:#444;text-decoration:none;font-weight:200;margin-bottom:1em;text-align:left;font-size:2.9em;}
 #dark-color .main h1 a{color:#444;text-decoration:none;font-weight:200;}
