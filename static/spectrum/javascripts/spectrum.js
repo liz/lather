@@ -14,6 +14,11 @@ $('#twitter-topper').click(function() {
   $('#twitter-color').slideToggle();
   $('.twitter-minus').toggle();
   $('.twitter-plus').toggle();
+  $('#tumbles-color').slideUp();
+  $('#words-color').slideUp();
+  $('#flickr-color').slideUp();
+  $('#delicious-color').slideUp();
+  $('#lastfm-color').slideUp();
   return false;
 });
 
@@ -21,34 +26,60 @@ $('#tumbles-topper').click(function() {
   $('#tumbles-color').slideToggle();
   $('.tumbles-minus').toggle();
   $('.tumbles-plus').toggle()
+  $('#words-color').slideUp();
+  $('#flickr-color').slideUp();
+  $('#delicious-color').slideUp();
+  $('#lastfm-color').slideUp();
+  $('#twitter-color').slideUp();
   return false;
 });
 
 $('#words-topper').click(function() {
   $('#words-color').slideToggle();
   $('.words-minus').toggle();
-  $('.words-plus').toggle()
+  $('.words-plus').toggle();
+  $('#flickr-color').slideUp();
+  $('#delicious-color').slideUp();
+  $('#lastfm-color').slideUp();
+  $('#twitter-color').slideUp();
+  $('#tumbles-color').slideUp();
   return false;
 });
 
 $('#flickr-topper').click(function() {
   $('#flickr-color').slideToggle();
   $('.flickr-minus').toggle();
-  $('.flickr-plus').toggle()
+  $('.flickr-plus').toggle();
+  $('#delicious-color').slideUp();
+  $('#lastfm-color').slideUp();
+  $('#twitter-color').slideUp();
+  $('#words-color').slideUp();
+  $('#tumbles-color').slideUp();
   return false;
 });
 
 $('#delicious-topper').click(function() {
   $('#delicious-color').slideToggle();
   $('.delicious-minus').toggle();
-  $('.delicious-plus').toggle()
+  $('.delicious-plus').toggle();
+  $('#lastfm-color').slideUp();
+  $('#twitter-color').slideUp();
+  $('#words-color').slideUp();
+  $('#tumbles-color').slideUp();
+  $('#flickr-color').slideUp();
+  return false;
   return false;
 });
 
 $('#lastfm-topper').click(function() {
   $('#lastfm-color').slideToggle();
   $('.lastfm-minus').toggle();
-  $('.lastfm-plus').toggle()
+  $('.lastfm-plus').toggle();
+  $('#twitter-color').slideUp();
+  $('#words-color').slideUp();
+  $('#tumbles-color').slideUp();
+  $('#flickr-color').slideUp();
+  $('#delicious-color').slideUp();
   return false;
 });
 

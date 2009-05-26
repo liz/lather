@@ -207,7 +207,7 @@ class MeowrWeeklyArtists(template.Node):
     return ''
 
 @register.tag(name='get_meowr_weeklyartists')
-def do_get_meowr_fms(parser, token):
+def do_get_meowr_weeklyartists(parser, token):
   try:
     tag_name, arg = token.contents.split(None, 1)
   except ValueError:
@@ -217,6 +217,28 @@ def do_get_meowr_fms(parser, token):
     raise template.TemplateSyntaxError, "%s tag had invalid arguments" % tag_name
   var_name = m.groups()[0]
   return MeowrWeeklyArtists(var_name)
+
+
+class MeowrRecentTracks(template.Node):
+  def __init__(self, var_name):
+    self.var_name = var_name
+
+  def render(self, context):
+    tracks = LastfmPost.objects.filter(chart='recenttracks').order_by('-pub_date')[0:10]
+    context[self.var_name] = tracks
+    return ''
+
+@register.tag(name='get_meowr_recenttracks')
+def do_get_meowr_recenttracks(parser, token):
+  try:
+    tag_name, arg = token.contents.split(None, 1)
+  except ValueError:
+    raise template.TemplateSyntaxError, "%s tag requires arguments" % token.contents.split()[0]
+  m = re.search(r'as (\w+)', arg)
+  if not m:
+    raise template.TemplateSyntaxError, "%s tag had invalid arguments" % tag_name
+  var_name = m.groups()[0]
+  return MeowrRecentTracks(var_name)
 
 
 class MeowrWords(template.Node):

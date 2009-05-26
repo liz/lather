@@ -114,6 +114,7 @@ a:hover{text-decoration:underline;}
 #lastfm-color .main .lastfm-link a{color:#5b676e;font-weight:bold;text-decoration:none;}
 #lastfm-color .main .lastfm-link a:hover{color:#222;}
 #lastfm-color .main ul li{}
+#lastfm-color .main h3{font-size:1.8em;}
 
 .topper-title{float:left;padding-left:1em;color:#fff;text-decoration:none;font-size:1.7em;padding-top:.85em;}
 .twitter-plus{float:right;padding-right:.5em;color:#fff;text-decoration:none;font-size:2.2em;padding-top:.6em;}
