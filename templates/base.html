@@ -169,8 +169,9 @@ while(x=eval(x));}hiveware_enkoder();
 </div>	
 <div id="lastfm-color">
 <div class="main">
+<div class="lastfmsuper">
+<div class="lastfm">
 <h3>Top Ten Artists for the Week</h3>
-<div id="lastfm">
 <ul>
 {% get_meowr_weeklyartists as artist_list %}
 {% for artist in artist_list|slice:":5" %}
@@ -185,6 +186,24 @@ while(x=eval(x));}hiveware_enkoder();
 </ul>
 <div class="clear"></div>
 </div>
+<div class="lastfm">
+<h3>Top Ten Tracks for the Week</h3>
+<ul>
+{% get_meowr_weeklytracks as track_list %}
+{% for track in track_list|slice:":5" %}
+<li><a href="{{ track.url }}">{{ track.track|truncatewords:"3" }}</a></li>
+{% endfor %}
+</ul>
+<ul>
+{% get_meowr_weeklytracks as track_list %}
+{% for track in track_list|slice:"5:" %}
+<li><a href="{{ track.url }}">{{ track.track|truncatewords:"3" }}</a></li>
+{% endfor %}
+</ul>
+<div class="clear"></div>
+</div>
+</div>
+<div class="clear"></div>
 <div class="lastfm-link"><a href="http://www.last.fm/user/misstricky" title="my last.fm" rel="me" >&gt;</a></div>
 </div>
 </div>
@@ -199,7 +218,7 @@ while(x=eval(x));}hiveware_enkoder();
 <ul>
 {% get_meowr_bookmarks as bookmark_list %}
 {% for bookmark in bookmark_list %}
-<li><a href="{{ bookmark.url }}">{{ bookmark.description }}</a></li>
+<li><a href="{{ bookmark.url }}">{{ bookmark.description|truncatewords:"4" }}</a></li>
 {% endfor %}
 </ul>
 <div class="clear"></div>

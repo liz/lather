@@ -218,6 +218,27 @@ def do_get_meowr_weeklyartists(parser, token):
   var_name = m.groups()[0]
   return MeowrWeeklyArtists(var_name)
 
+class MeowrWeeklyTracks(template.Node):
+  def __init__(self, var_name):
+    self.var_name = var_name
+
+  def render(self, context):
+    tracks = LastfmPost.objects.filter(chart='weeklytrackchart').order_by('chart_position')[0:10]
+    context[self.var_name] = tracks
+    return ''
+
+@register.tag(name='get_meowr_weeklytracks')
+def do_get_meowr_weeklytracks(parser, token):
+  try:
+    tag_name, arg = token.contents.split(None, 1)
+  except ValueError:
+    raise template.TemplateSyntaxError, "%s tag requires arguments" % token.contents.split()[0]
+  m = re.search(r'as (\w+)', arg)
+  if not m:
+    raise template.TemplateSyntaxError, "%s tag had invalid arguments" % tag_name
+  var_name = m.groups()[0]
+  return MeowrWeeklyTracks(var_name)
+
 
 class MeowrRecentTracks(template.Node):
   def __init__(self, var_name):
