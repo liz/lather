@@ -199,7 +199,6 @@ ol#comments li{list-style-type:none;}
 #comments cite .date{text-transform:lowercase;}
 #comments cite span{display:block;}
 .said{float:left;width:65%;padding-top:.5em;display:block;}
-#comments cite a{text-decoration:none;}
 .comment-shape{display:block;}
 
 
