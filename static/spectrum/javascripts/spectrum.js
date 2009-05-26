@@ -19,18 +19,38 @@ $('#twitter-topper').click(function() {
   $('#flickr-color').slideUp();
   $('#delicious-color').slideUp();
   $('#lastfm-color').slideUp();
+  $('.tumbles-minus').hide();
+  $('.tumbles-plus').show();
+  $('.words-minus').hide();
+  $('.words-plus').show();
+  $('.flickr-minus').hide();
+  $('.flickr-plus').show();
+  $('.delicious-minus').hide();
+  $('.delicious-plus').show();
+  $('.lastfm-minus').hide();
+  $('.lastfm-plus').show();
   return false;
 });
 
 $('#tumbles-topper').click(function() {
   $('#tumbles-color').slideToggle();
   $('.tumbles-minus').toggle();
-  $('.tumbles-plus').toggle()
+  $('.tumbles-plus').toggle();
   $('#words-color').slideUp();
   $('#flickr-color').slideUp();
   $('#delicious-color').slideUp();
   $('#lastfm-color').slideUp();
   $('#twitter-color').slideUp();
+  $('.words-minus').hide();
+  $('.words-plus').show();
+  $('.flickr-minus').hide();
+  $('.flickr-plus').show();
+  $('.delicious-minus').hide();
+  $('.delicious-plus').show();
+  $('.lastfm-minus').hide();
+  $('.lastfm-plus').show();
+  $('.twitter-minus').hide();
+  $('.twitter-plus').show();
   return false;
 });
 
@@ -43,6 +63,16 @@ $('#words-topper').click(function() {
   $('#lastfm-color').slideUp();
   $('#twitter-color').slideUp();
   $('#tumbles-color').slideUp();
+  $('.flickr-minus').hide();
+  $('.flickr-plus').show();
+  $('.delicious-minus').hide();
+  $('.delicious-plus').show();
+  $('.lastfm-minus').hide();
+  $('.lastfm-plus').show();
+  $('.twitter-minus').hide();
+  $('.twitter-plus').show();
+  $('.tumbles-minus').hide();
+  $('.tumbles-plus').show();
   return false;
 });
 
@@ -55,6 +85,16 @@ $('#flickr-topper').click(function() {
   $('#twitter-color').slideUp();
   $('#words-color').slideUp();
   $('#tumbles-color').slideUp();
+  $('.delicious-minus').hide();
+  $('.delicious-plus').show();
+  $('.lastfm-minus').hide();
+  $('.lastfm-plus').show();
+  $('.twitter-minus').hide();
+  $('.twitter-plus').show();
+  $('.tumbles-minus').hide();
+  $('.tumbles-plus').show();
+  $('.words-minus').hide();
+  $('.words-plus').show();
   return false;
 });
 
@@ -67,7 +107,16 @@ $('#delicious-topper').click(function() {
   $('#words-color').slideUp();
   $('#tumbles-color').slideUp();
   $('#flickr-color').slideUp();
-  return false;
+  $('.lastfm-minus').hide();
+  $('.lastfm-plus').show();
+  $('.twitter-minus').hide();
+  $('.twitter-plus').show();
+  $('.tumbles-minus').hide();
+  $('.tumbles-plus').show();
+  $('.words-minus').hide();
+  $('.words-plus').show();
+  $('.flickr-minus').hide();
+  $('.flickr-plus').show();
   return false;
 });
 
@@ -80,6 +129,16 @@ $('#lastfm-topper').click(function() {
   $('#tumbles-color').slideUp();
   $('#flickr-color').slideUp();
   $('#delicious-color').slideUp();
+  $('.twitter-minus').hide();
+  $('.twitter-plus').show();
+  $('.tumbles-minus').hide();
+  $('.tumbles-plus').show();
+  $('.words-minus').hide();
+  $('.words-plus').show();
+  $('.flickr-minus').hide();
+  $('.flickr-plus').show();
+  $('.delicious-minus').hide();
+  $('.delicious-plus').show();
   return false;
 });
 
