@@ -20,7 +20,7 @@
 <dt>Tags</dt>
 {% load tagging_tags %}
 <dd>
-{% tags_for_object object as tag_list %}{% for tag in tag_list %}<a href="/tags/{{ tag }}">{{ tag }}</a>{% if forloop.last %}{% else %}{%ifequal forloop.revcounter0 1 %} and {% else %}, {% endifequal %}{% endif %}{% endfor %}
+{% tags_for_object object as tag_list %}{% for tag in tag_list %}<a href="/tags/{{ tag }}">{{ tag }}</a>{% if forloop.last %}{% else %}{%ifequal forloop.revcounter0 1 %} &amp; {% else %}, {% endifequal %}{% endif %}{% endfor %}
 </dd>
 </dl>
 {% endif %}
@@ -33,16 +33,29 @@
 <a href='/ratings/{{ rating.slug }}' title='{{ rating.dscription }}'><img src='/static/spectrum/images/rating/{{ rating.slug }}.gif' class='rating' alt='{{ rating.description }}' /></a>{% endfor %}</dd>
 </dl>
 {% endif %}
+{% load threadedcommentstags %}
+{% get_free_comment_count for object as comment_count %}
+{% ifnotequal comment_count 0 %}
+<dl>
+<dt>Comment</dt>
+<dd>
+{% get_free_comment_count for object as comment_count %}
+{% ifnotequal comment_count 0 %}<a href="{{ object.get_absolute_url }}#commenting">{{ comment_count }} comment{{ comment_count|pluralize }}</a>{% else %}<a href="{{ object.get_absolute_url }}#commenting">Post a comment!</a>{% endifnotequal %}
+</dd>
+</dl>
+{% else %}
+{% if object.pub_date|showcomments %}
 {% if object.enable_comments %}
 <dl>
 <dt>Comment</dt>
 <dd>
-{% load threadedcommentstags %}
 {% get_free_comment_count for object as comment_count %}
-{% ifnotequal comment_count 0 %}<a href="#commenting">{{ comment_count }} comment{{ comment_count|pluralize }}</a>{% else %}<a href="#commenting">Post a comment!</a>{% endifnotequal %}
+{% ifnotequal comment_count 0 %}<a href="{{ object.get_absolute_url }}#commenting">{{ comment_count }} comment{{ comment_count|pluralize }}</a>{% else %}<a href="{{ object.get_absolute_url }}#commenting">Post a comment!</a>{% endifnotequal %}
 </dd>
 </dl>
 {% endif %}
+{% endif %}
+{% endifnotequal %}
 <dl>
 <dt>Navigate</dt>
 <dd>
@@ -56,6 +69,61 @@
 </dl>
 </div>
 <div class="clear"></div>
+{% get_free_comment_count for object as comment_count %}
+{% ifnotequal comment_count 0 %}
+<hr class="hide" />
+<div id="comment-box">
+<div class="comment-head">
+<a id="commenting"></a><h2>Comments!</h2>
+</div>
+<ol id="comments">
+{% get_free_threaded_comment_tree for object as tree %}
+{% for comment in tree %}
+<li id="comment-{{ comment.id }}">
+<span class="comment-shape">
+<cite {%ifequal comment.email 'liz@latherrinserepeat.org' %}style="border-color:#999;"{% endifequal %}>
+<span class="author">{% if comment.website %}<a href="{{ comment.website }}">{{ comment.name }}</a>{% else %}{{ comment.name }}{% endif %}</span>
+<span class="date">{{ comment.date_submitted|date:"n.j.y / ga" }}</span>
+</cite>
+<span class="said">
+{% auto_transform_markup comment %}
+</span>
+<div class="clear"></div>
+</span>
+</li>
+{% endfor %}
+</ol>
+{%ifequal object.enable_comments 1 %}
+{% if object.pub_date|showcomments %}
+<h2>Leave a Comment!</h2>
+<div id="commentness">
+<div class="comment-form">
+<form method="post" action="{% get_free_comment_url object %}">
+<fieldset>
+<p><label for="id_name">Name</label> <input type="text" id="id_name" name="name" /></p>
+<p><label for="id_email">Email (will not be displayed)</label> <input type="text" id="id_email" name="email" /></p>
+<p><label for="id_website">Site</label> <input type="text" id="id_website" name="website" /></p>
+</div>
+<div class="comment-form2">
+<p><label for="id_comment">Say it!</label><textarea name="comment" id="id_comment" rows="10" cols="30"></textarea></p>
+</div>
+<div class="clear"></div>
+<p class="center">
+<input type="hidden" name="markup" class="none" value="5" />
+<input type="submit" id="submit" value="Submit!" />
+</p>
+</fieldset>
+</form>
+</div>
+{% else %}
+<h3>Comments are closed for this article.</h3>
+{% endif %}
+{% else %}
+<h3>Comments are closed for this article.</h3>
+{% endifequal %}
+</div>
+{% else %}
+{% if object.pub_date|showcomments %}
 {% if object.enable_comments %}
 <hr class="hide" />
 <div id="comment-box">
@@ -109,4 +177,6 @@
 {% endifequal %}
 </div>
 {% endif %}
+{% endif %}
+{% endifnotequal %}
 {% endblock %}

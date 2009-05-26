@@ -167,7 +167,7 @@ ul li{margin-top:.8em;}
 .pimg img{margin-right:auto;margin-left:auto;text-align:center;}
 .rating{width:69px;height:12px;opacity:0.85;margin-top:.3em;}
 .rating:hover{opacity:1;}
-.content img{padding:.5em;border:1px #ddd solid;}
+.content img{padding:.5em;border:1px #ccc solid;}
 .content a img:hover{background:#efefef;}
 
 #dark-color .main h1{color:#444;text-decoration:none;font-weight:200;margin-bottom:1em;text-align:left;font-size:2.9em;}
@@ -252,3 +252,10 @@ ol#comments li{list-style-type:none;}
 #footer p{padding-top:40px;float:left;;}
 #search{float:right;}
 #search input{background:#555;border:1px solid #555;color:#999;font-size:1.2em;padding:.2em;width:12em;}
+
+.spoiler{background:#666;color:#666;}
+
+pre{padding:1em 0;overflow:auto;border-top:1px dotted #ccd;border-bottom:1px dotted #ccd;}
+pre, code{font-family:"Monaco", "Courier New", Courier;font-size:10px;}
+blockquote{margin:2em 10% 2.3em 8%;font-style:italic;color:#556;}
+.caption{margin:-40px 0 2em 8%;display:block;}
