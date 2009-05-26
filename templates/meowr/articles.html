@@ -56,7 +56,7 @@
 {% endif %}
 {% endif %}
 {% endifnotequal %}
-{% ifequal object_list|length 1 %}
+{% if object_list|length_is:"1" %}
 <dl>
 <dt>Navigate</dt>
 <dd>
@@ -68,7 +68,7 @@
 {% endif %}
 </dd>
 </dl>
-{% endifequal %}
+{% endif %}
 </div>
 <div class="clear"></div>
 {% endfor %}
