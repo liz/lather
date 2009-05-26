@@ -27,7 +27,7 @@ a:hover{text-decoration:underline;}
 #fancytitle:hover{background:url(/static/spectrum/images/fancytitle.gif) no-repeat 0 -55px;}
 /* #menu{font-size:1.1em;float:right;clear:both;} */
 
-#dark-color .main #menu{float:left;font-size:1.25em;margin-left:-9em;margin-top:.1em;}
+#dark-color .main #menu{float:left;font-size:1.2em;margin-left:-9em;margin-top:.1em;}
 #dark-color .main #menu ul{}
 #dark-color .main #menu ul li{display:inline;list-style-type:none;padding-right:1em;}
 #dark-color .main #menu a{text-decoration:none;color:#537aa0;}
