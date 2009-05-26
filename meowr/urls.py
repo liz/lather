@@ -12,7 +12,7 @@ article_info_dict = {
 
 article_list_dict = {
 	'queryset':	 Article.objects.filter(status=Article.LIVE_STATUS),
-	'paginate_by': 7,
+	'paginate_by': 1,
 }
 
 urlpatterns = patterns('django.views.generic',
@@ -21,6 +21,9 @@ urlpatterns = patterns('django.views.generic',
 
 	 url(r'^(?P<year>\d{4})/(?P<month>\d{1,2})/(?P<day>\d{1,2})/(?P<slug>[a-z0-9_-]+)/$',
 	  'date_based.object_detail', dict(article_info_dict, slug_field='slug'), name='article_view'),
+	
+	url(r'^plain/(?P<year>\d{4})/(?P<month>\d{1,2})/(?P<day>\d{1,2})/(?P<slug>[a-z0-9_-]+)/$',
+	  'date_based.object_detail', dict(article_info_dict, slug_field='slug', template_name='meowr/article_detail_plain.html'), name='article_view_plain'),
 
 	 url(r'^(?P<year>\d{4})/(?P<month>\d{1,2})/(?P<day>\d{1,2})/$',
 	  'date_based.archive_day', article_info_dict, name='day_view'),

@@ -5,6 +5,7 @@ from tagging.fields import TagField
 from markdown import markdown
 from django.db.models import permalink
 from threadedcomments.moderation import moderator, CommentModerator
+from threadedcomments.models import PLAINTEXT
 
 class Section(models.Model):
 
@@ -73,7 +74,7 @@ class Article(models.Model):
 	sections		= models.ManyToManyField(Section, default="articles")
 	tags			= TagField()
 	rating          = models.ManyToManyField(Rating, blank=True)
-	enable_comments = models.BooleanField(default=True)
+	enable_comments = models.BooleanField(default=False)
 	body_html		= models.TextField(editable=False, blank=True)
 	excerpt_html	= models.TextField(editable=False, blank=True)
 	
@@ -134,5 +135,6 @@ class ArticleModerator(CommentModerator):
 	email_notification 	= True
 	auto_close_field	= 'pub_date'
 	close_after			= 30
+	allowed_markup		= [PLAINTEXT]
 
 moderator.register(Article, ArticleModerator)

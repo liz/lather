@@ -3,12 +3,7 @@
 {% block title %}{{ block.super }} - The {{ flatpage.title }} {% endblock %}
 
 {% block content %}
-<div id="bigbox">
-<div class="clear"></div>
 <h1>The <span class="special">{{ flatpage.title }}</span></h1>
-<div id="box">
-<div class="clear"></div>
 {{ flatpage.content }}
-</div><div class="clear"></div>
-</div>
+<div class="clear"></div>
 {% endblock %}

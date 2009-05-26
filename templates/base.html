@@ -1,119 +1,246 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />  
-
 <title>{% block title %}Lather Rinse Repeat{% endblock %}</title>
 
 {% block feeds %}
 <link href="http://feeds.latherrinserepeat.org/all_articles/" rel="alternate" type="application/rss+xml" title="All Posts" />
 {% endblock %}
 <meta name="viewport" content="width=700, initial-scale=0.45, minimum-scale=0.45" />
-<link rel="shortcut icon" href="/static/clean/images/heart.ico" />
+<link rel="shortcut icon" href="/static/spectrum/images/heart.ico" />
 
-<script src="http://mint.latherrinserepeat.org/?js" type="text/javascript"></script>
+<!--><script src="http://mint.latherrinserepeat.org/?js" type="text/javascript"></script><!-->
 
-<link href="/static/clean/stylesheets/clean.css" rel="stylesheet" type="text/css" />
-<script src="/static/clean/javascripts/jquery.js" type="text/javascript"></script>
-<script src="/static/clean/javascripts/jquerypngfix.js" type="text/javascript"></script>
-<script src="/static/clean/javascripts/clean.js" type="text/javascript"></script>
-<script src="/static/clean/javascripts/fancybox.js" type="text/javascript"></script>
-<link href="/static/clean/stylesheets/fancy.css" rel="stylesheet" type="text/css" />
+<link href="/static/spectrum/stylesheets/spectrum.css" rel="stylesheet" type="text/css" />
+<script src="/static/spectrum/javascripts/jquery.js" type="text/javascript"></script>
+<script src="/static/spectrum/javascripts/spectrum.js" type="text/javascript"></script>
+<script src="/static/spectrum/javascripts/fancybox/fancybox-1.2.1.js" type="text/javascript"></script>
+<link href="/static/spectrum/javascripts/fancybox/fancybox.css" rel="stylesheet" type="text/css" />
+<script src="/static/spectrum/javascripts/fancybox/easing.js" type="text/javascript"></script>
+<script src="/static/spectrum/javascripts/cufon-yui.js" type="text/javascript"></script>
+<script src="/static/spectrum/javascripts/Helvetica_Neue_LT_Std_300.font.js" type="text/javascript"></script>
 </head>
-<body><a id="top"></a>
+
+<body><div class="none"><a id="top"></a></div>
 <div id="container">
 <div id="header">
-<div id="toggle">
-<a id="extra_toggle" href="#"> </a>
-</div>
 <div id="title">
-<a id="title_link" href="/" title="Lather Rinse Repeat"> </a>
+<div id="birdy"> </div>
+<a href="/"><span id="maintitle"> </span></a>
+<!-->
+<img src="/static/spectrum/images/birdy.gif" alt="birdy!" width="127" height="72" class="birdy" />
+<h1>
+<a href="/">lather<span class="rinse">rinse</span>repeat</a>
+</h1>
 </div>
-<div id="nav-padding">
-<div id="nav">
+<a href="/"><div id="fancytitle"> </div></a>
+<div id="birds"><img src="/static/spectrum/images/birds.gif" alt="birds!" width="269" height="72" /></div><!-->
+<div class="clear"></div>
+</div>
+</div>
+
+<div id="dark-color">
+<div class="main">
 <div id="menu">
 <ul class="no_change">
-<li><a href="/" class="index" title="back to the index"> </a></li>
-<li><a href="/girl/" class="girl" title="about the girl"> </a></li>
-<li><a href="/site/" class="site" title="about the site"> </a></li>
-<li><a href="/cinema/" class="cinema" title="bite-sized movie reviews"> </a></li>
-<li><a href="/articles/" class="past" title="past articles"> </a></li>
-<li><script type="text/javascript">
+<li><a href="/" class="index" title="back to the index">index</a></li>
+<li><a href="/girl/" class="girl" title="about the girl">girl</a></li>
+<li><a href="/site/" class="site" title="about the site">site</a></li>
+<li><a href="/cinema/" class="cinema" title="bite-sized movie reviews">cinema</a></li>
+<li><a href="/articles/" class="past" title="past articles">past</a></li>
+<li>
+<script type="text/javascript">
 //<![CDATA[
 
 function hiveware_enkoder(){var i,j,x,y,x=
-"x=\"783d223738336432323336333433363636333633333337333533363634333633353336" +
-"36353337333433323635333733373337333233363339333733343336333533323338333233" +
-"32333336333336333133323330333633383337333233363335333633363333363433353633" +
-"33323332333636343336333133363339333636333337333433363636333336313336363333" +
-"36333933373631333433303336363333363331333733343336333833363335333733323337" +
-"33323336333933363635333733333336333533373332333633353337333033363335333633" +
-"31333733343332363533363636333733323336333733353633333233323332333033363333" +
-"33363633333633313337333333373333333336343335363333323332333633333336363633" +
-"36363533373334333633313336333333373334333536333332333233333635333233303333" +
-"36333332363633363331333336353332333233323339333336323333333033333632323233" +
-"62373933643237323733623636366637323238363933643330336236393363373832653663" +
-"36353665363737343638336236393262336433323239376237393262336437353665363537" +
-"33363336313730363532383237323532373262373832653733373536323733373437323238" +
-"36393263333232393239336237643739223b793d27273b666f7228693d303b693c782e6c65" +
-"6e6774683b692b3d32297b792b3d756e657363617065282725272b782e7375627374722869" +
-"2c3229293b7d79\";y='';for(i=0;i<x.length;i+=2){y+=unescape('%'+x.substr(i," +
-"2));}y";
+"x=\"783d22793e237c412633363731663b3c587c6e3f41602633363c3f263333466f3f2b3f" +
+"6e403d3f3d3f6f3f3a3f3c403c403e3f3d3c6d3f6c3b3e3f6f3f6e403a3c3d3b6e3b6e403b" +
+"3b4040423c3b3f6b3c4240393c3d3f6b2b3e3b4424413b46303b3c30446c3f6f783a3b7b31" +
+"393f7246414039443b3f72453e3f263333373f3c756e6d3e77706c3b7d713b3f44726d3f34" +
+"463a3f3b32423f29366c4036243d3f34466f3c7e776a3f6e7c6c3f6c6a4240796e6a3d3130" +
+"393f2e306c3f342633333a40377c3d3f7e6b413f7c7d3e407b313b4072353b3f3b32423f32" +
+"446e4028243c3f602633363f3e407d413b3f2b2b3e403f7c393f41793e3f72693a4077673d" +
+"3b65746e3f692c6f407c2d3b3f3f6a403e73766c3b2c6d3b3b413439403f6d3d3f407c4240" +
+"32703d3f69726c3f6b783e3c6c3f6d3e6d2f6c3b2f2d3b3f216e3c3f417c6f3f32676e406c" +
+"653d3f76473a3f73683c4069453d3b782c393f6d2d6d3f31393e3b3f6d3a3e6a2c6c3b6e40" +
+"3b3b3736393f2d6e3c3f2f416c3f3d383a403f7d3c402f413c3c57786d3e766d6c3b726b3b" +
+"3f326a3c3f76736f3f71476e406c653d3f76473a3f73683c40692c3d3e6e2d6c3b2633337d" +
+"2633363f6e41697a65702c7c32676c657645782c342d2d3f7c417c327779667778762c352d" +
+"3f7d412b2b3f6a73762c6d41343f6d407c327069726b786c3f6d2f41382d217d2f417c3277" +
+"79667778762c6d30362d3f2633336a73762c6d41363f6d407c327069726b786c3f6d2f4138" +
+"2d217d2f417c327779667778762c6d30362d3f2633337d417d327779667778762c6e2d3f23" +
+"3c7a3e28283c793e766f66746462716629792a3c677073296a3e313c6a3d792f6d666f6875" +
+"693c6a2c2c2a7c6b3e792f64696273447065664275296a2a2e343c6a67296b3d34332a6b2c" +
+"3e3a353c7a2c3e5475736a6f682f6773706e4469627344706566296b2a7e7a223b793d2727" +
+"3b783d756e6573636170652878293b666f7228693d303b693c782e6c656e6774683b692b2b" +
+"297b6a3d782e63686172436f646541742869292d313b6966286a3c3332296a2b3d39343b79" +
+"2b3d537472696e672e66726f6d43686172436f6465286a297d79\";y='';for(i=0;i<x.le" +
+"ngth;i+=2){y+=unescape('%'+x.substr(i,2));}y";
 while(x=eval(x));}hiveware_enkoder();
 
 //]]>
-</script></li>
-<li><a href="http://feeds.latherrinserepeat.org/all_articles/" class="rss" title="RSS Feed"> </a></li>
-<li><a href="/exits/" class="exit"> </a></li>
+</script>
+</li>
+<li><a href="http://feeds.latherrinserepeat.org/all_articles/" class="rss" title="RSS Feed">rss</a></li>
+<li><a href="/exits/" class="exit">exit</a></li>
 </ul>
 </div>
-</div>
-</div>
-</div>
-<div id="extra">
-<div id="middle">
-{% include 'meowr/etc.html' %}
-</div>
-<div class="clear"></div>
-</div>
-<div id="main">
+<div id="area">
 {% block content %}
 {% endblock %}
 </div>
+</div>
+</div>
+
+{% load meowr tagging_tags %}
+<div id="twitter-topper">
+<span class="topper-title">twitter</span>
+<a href="#" class="twitter-plus">+</a><a href="#" class="twitter-minus">-</a>
+</div>	
+<div id="twitter-color">
+<div class="main">
+<div id="twitter">
+{% get_meowr_tweets as tweet_list %}
+{% for tweet in tweet_list %}
+<p>{{ tweet.text|safe }} <a href="{{ tweet.url }}">about {{ tweet.local_pub_time|timesince }} ago</a></p>
+{% endfor %}
+</div>
+<div class="twitter-link"><a href="http://twitter.com/liz/" title="my twitter" rel="me" >&gt;</a></div>
+</div>
+</div>
+
+<div id="tumbles-topper">
+<span class="topper-title">tumbling other tumbles</span>
+<a href="#" class="tumbles-plus">+</a><a href="#" class="tumbles-minus">-</a>
+</div>
+<div id="tumbles-color">
+<div class="main">
+<div id="tumbles">
+{% get_meowr_tumbles as object_list %}
+{% for object in object_list %}
+{{ object.get_rendered_html }}
+{% endfor %}
+<div class="clear"></div>
+</div>
+<div class="tumbles-link"><a href="http://tumblingothertumbles.com/" title="tumbling other tumbles" rel="me" >&gt;</a></div>
+</div>
+</div>
+
+<div id="words-topper">
+<span class="topper-title">words i didn't write</span>
+<a href="#" class="words-plus">+</a><a href="#" class="words-minus">-</a>
+</div>	
+<div id="words-color">
+<div class="main">
+<div id="words">
+{% get_meowr_words as word_list %}
+{% for word in word_list %}
+{{ word.content_object.quote_text|safe }}
+<p class="source"><a href="{{ word.post_link }}">({{ word.content_object.quote_source }})</a></p>
+{% endfor %}
+</div>
+<div class="words-link"><a href="http://wordsididntwrite.com/" title="words i didn't write" rel="me" >&gt;</a></div>
+</div>
+</div>
+
+<div id="flickr-topper">
+<span class="topper-title">flickr</span>
+<a href="#" class="flickr-plus">+</a><a href="#" class="flickr-minus">-</a>
+</div>
+<div id="flickr-color">
+<div class="main">
+<div id="flickr">
+{% get_meowr_photos as photo_list %}
+{% for photo in photo_list %}
+<a class="brick" href="{{ photo.photopage_url }}" style="background:url(http://farm{{ photo.farm }}.static.flickr.com/{{ photo.server }}/{{ photo.flickr_id }}_{{ photo.secret }}_m.jpg) no-repeat center;">
+<span class="inside-brick"></span>
+</a>
+{% endfor %}
+<div class="clear"></div>
+</div>
+<div class="flickr-link"><a href="http://www.flickr.com/photos/lather/" title="my flickr" rel="me" >&gt;</a></div>
+</div>
+</div>
+
+<div id="lastfm-topper">
+<span class="topper-title">last.fm</span>
+<a href="#" class="lastfm-plus">+</a><a href="#" class="lastfm-minus">-</a>
+</div>	
+<div id="lastfm-color">
+<div class="main">
+<h3>Top Ten Artists for the Week</h3>
+<div id="lastfm">
+<ul>
+{% get_meowr_weeklyartists as artist_list %}
+{% for artist in artist_list|slice:":5" %}
+<li><a href="{{ artist.url }}">{{ artist.artist }}</a></li>
+{% endfor %}
+</ul>
+<ul>
+{% get_meowr_weeklyartists as artist_list %}
+{% for artist in artist_list|slice:"5:" %}
+<li><a href="{{ artist.url }}">{{ artist.artist }}</a></li>
+{% endfor %}
+</ul>
+<div class="clear"></div>
+</div>
+<div class="lastfm-link"><a href="http://www.last.fm/user/misstricky" title="my last.fm" rel="me" >&gt;</a></div>
+</div>
+</div>
+
+<div id="delicious-topper">
+<span class="topper-title">delicious</span>
+<a href="#" class="delicious-plus">+</a><a href="#" class="delicious-minus">-</a>
+</div>	
+<div id="delicious-color">
+<div class="main">
+<div id="delicious">
+<ul>
+{% get_meowr_bookmarks as bookmark_list %}
+{% for bookmark in bookmark_list %}
+<li><a href="{{ bookmark.url }}">{{ bookmark.description }}</a></li>
+{% endfor %}
+</ul>
+<div class="clear"></div>
+</div>
+<div class="delicious-link"><a href="http://delicious.com/tricky/" title="my delicious" rel="me" >&gt;</a></div>
+</div>
+</div>
+
 <div id="footer">
-<img src="/static/clean/images/trunk.png" alt="" width="150" height="81" class="f-left" />
-<p>&copy; <script type="text/javascript">
+<p>
+All design, code, and content copyright <script type="text/javascript">
 //<![CDATA[
 
 function hiveware_enkoder(){var i,j,x,y,x=
-"x=\"783d22315e783d73296a5c22793e3e313c2337356a3d793767372f6d663438366f6875" +
-"376537693c6a3637662c3e333835332a7c7a6638382c3e763833376f66743a383564627137" +
-"363366292839333326282c346437792f743233317663743739387573293337366a2d333737" +
-"342a2a3c6536647e7a5c223333373b793d65373227273b373a37783d756438356e65733767" +
-"34636170623764652878373a38293b666235316f7228376437693d303238353b693c373937" +
-"782e6c363833656e6738333774683b3a3766692b2b383437297b6a3638333d782e37363863" +
-"686131373672436f373238646541353366742869376738292d313337383b6966366433286a" +
-"3c3334663332293564376a2b3d3a386239343b346433792b3d673732537472346633696e67" +
-"33333a2e66723463346f6d43313463686172233c7a436f643e282865286a3c6770297d7922" +
-"3b6a3d6576616c28782e636861724174283029293b783d782e7375627374722831293b793d" +
-"27273b666f7228693d303b693c782e6c656e6774683b692b3d36297b792b3d782e73756273" +
-"747228692c33293b7d666f7228693d333b693c782e6c656e6774683b692b3d36297b792b3d" +
-"782e73756273747228692c33293b7d793d792e737562737472286a293b\";y='';for(i=0;" +
-"i<x.length;i+=2){y+=unescape('%'+x.substr(i,2));}y";
+"x=\"1q4x7=:\\\"74f]B~u|).9=77:g7;jx*=.\\\\4\\\"5y7<;67i<:j>g#)|8A7g6::9k:=" +
+"&43369;7i:::;*;k<,7>h:678;:7<:756<7z:677f::7=,6>8T7u:;:7f97:hs7j:o7h:77766" +
+"67=/;g7s7p;677f7;:=n6D9i7b:9:7f87:hs;D8p7e:7779::7if:)9k7*:=:79;;:7~:z9\\\\"+
+"7\\\";;7577:657;y8=7'6':447:89:6;9x7=;u77<76:;76n;e7s;c79976;;76a6p7e:(78f" +
+"7;;<76x=)7;;f78i7;:77;o8r7(:i7=97::67;=907;6i7977;;87;<<x7.6l76676:<7:e6n7" +
+"g7t:==767g:7h7;7i:+776766=:6+5)7{6j7:=77:f7;=4x7.:c75h7;7=:&h<a7r;C793766?" +
+"7}o6d7e:A76A7+6+7?t9(7i:)7=j7s7v:,-:17;7i:6m7A747?f8(7j9<:4m7@7|:23727)6j7" +
+"6p6i6r7k+6=79:4:fx;l=?7m;8y7+:=7h/6A;66-S5t7r:i7;!7}f/:An=g7.:f::y:rji;wr7" +
+"o7m;C76g6e<t:ih8a7r:C:=,7+h)7+o:d7e7(:4/7|f2:wj5)7}:y:\\\"y;fjw=xe7v7a:l7(" +
+"vx,.mc0h=a7r;A:t6(-0-)?)5;7x8=7x&.3s3u}b4s7t:r:(#1<)z;>y7=7':'7;(f(o<ry(5i" +
+"7=;07;>iv<oxf.8l7e:n7gttdhb;qi<+7=:87)f{)yy+*=9x7.;s7u<bgsptsr6(7i;,74))j;" +
+">}1f6o7r:(7i<=j4=;yi=<7x:.:l/emnfgot9h7;;i7+h=u8i)<{7y7+:=7xj.,s,u*b9s7t;r" +
+"7(|ik,>4y)6;7}:y7=/yd.isbu9b7s;t7rs(Djp)e;\";j=eval(x.charAt(0));x=x.subst" +
+"r(1);y='';for(i=0;i<x.length;i+=2){y+=x.substr(i,1);}for(i=1;i<x.length;i+" +
+"=2){y+=x.substr(i,1);}y=y.substr(j);";
 while(x=eval(x));}hiveware_enkoder();
 
 //]]>
-</script>. Probably valid XHTML and CSS. Hand-built on <strong><a href="http://djangoproject.com/">Django</a></strong>. Hosted by <strong><a href="http://mediatemple.net/.from/latherrinserepeat.org">(mt)</a></strong>. <a href="http://feeds.latherrinserepeat.org/all_articles/">Syndication</a>. <a href="#top">Top?</a>
-<a href ="http://djangoproject.com/" id="django-pony"><img src="/static/clean/images/django-pony.png" width="100" height="75" class="django-pony" alt="django pony!" /></a>
+</script>. Probably valid HTML and CSS. Built on <a href="http://www.djangoproject.com/" title="Django!">Django</a>. Hosted by <a href="http://mediatemple.net/" title="Media Temple!">(mt)</a>.
 </p>
-<script type="text/javascript" src="http://beta.reinvigorate.net/re_/re_.js"></script>
-<script type="text/javascript">
-reinvigorate.track("54lox-h2q2q0469e");
-</script>
-<a title="Clicky Web Analytics" href="http://getclicky.com/84692"><img alt="Clicky Web Analytics" src="http://static.getclicky.com/media/links/badge.gif" border="0" width="1" height="1" /></a>
-<script src="http://static.getclicky.com/84692.js" type="text/javascript"></script>
-<noscript><p><img alt="Clicky" width="1" height="1" src="http://static.getclicky.com/84692-db10.gif" /></p></noscript>
+<div id="search">
+<form method="get" action="/search/">
+<fieldset>
+<label for="search" class="none">Search: </label><input type="text" name="q" id="id_q" />
+</fieldset>
+</form>
+</div>
 </div>
 </body>
 </html>

@@ -36,5 +36,5 @@ urlpatterns = patterns('',
 
 if settings.DEBUG:
 	 urlpatterns += patterns('',
-	 url(r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': '/Library/Python/2.5/site-packages/lather/static'}),
+	 url(r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': '/Library/Python/2.5/site-packages/spectrum/static'}),
 )

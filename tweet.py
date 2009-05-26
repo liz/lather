@@ -1,3 +1,5 @@
+import sys, os
+os.environ['DJANGO_SETTINGS_MODULE'] = 'spectrum.settings'
 from django.core.management import setup_environ
 from django.contrib.contenttypes.models import ContentType
 import settings
