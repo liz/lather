@@ -169,10 +169,11 @@ ul li{margin-top:.8em;}
 .rating:hover{opacity:1;}
 .content img{padding:.5em;border:1px #ccc solid;}
 .content a img:hover{background:#efefef;}
+.content .excerpt{text-align:right;padding-right:30px;}
 
 #dark-color .main h1{color:#444;text-decoration:none;font-weight:200;margin-bottom:1em;text-align:left;font-size:2.9em;}
 #dark-color .main h1 a{color:#444;text-decoration:none;font-weight:200;}
-#dark-color .main h1 a:hover{text-decoration:underline;}
+#dark-color .main h1 a:hover{border-bottom:1px solid #444;}
 #dark-color .main h1 .special{}
 #dark-color .main h1 .title_date{}
 #dark-color .main h2{color:#bbb;text-decoration:none;font-weight:200;font-size:2.5em;margin-bottom:.75em;text-align:left}

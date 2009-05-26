@@ -1,12 +1,8 @@
 $(document).ready(function() {
 	
-Cufon.replace([ 'h1', '.exit_tag', '.month_title_small' ]);
+Cufon.replace([ '.exit_tag', '.month_title_small' ]);
 
-Cufon.replace('h2', {
-    hover: true
-});
-
-Cufon.replace('h3', {
+Cufon.replace(':header a', {
     hover: true
 });
 
