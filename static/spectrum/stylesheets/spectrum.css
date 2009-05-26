@@ -10,13 +10,14 @@ strong{font-weight:bold;}
 .right{clear:right;}
 .center{text-align:center;}
 .none{display:none;}
+.none{visibility:hidden;}
 a{color:#537aa0;text-decoration:none;font-weight:normal;font-style:normal;}
 a:hover{text-decoration:underline;}
 #container{}
 #header{background-color:#eee;color:#959595;height:145px;padding:.25px .25px 0;font-weight:lighter;font-size:2.5em;}
 #birdy{background-image:url(/static/spectrum/images/birdy.gif);width:127px;height:72px;margin-top:.1em;float:left;}
-#maintitle{width:495px;height:64px;background:url(/static/spectrum/images/maintitle.gif) no-repeat;margin-left:.3em;;margin-top:.6em;display:block;float:left;}
-#maintitle:hover{background-position:0 -86px;}
+#maintitle{width:475px;height:64px;background:url(/static/spectrum/images/maintitle.gif) no-repeat;margin-left:.3em;;margin-top:.58em;display:block;float:left;}
+#maintitle:hover{background-position:0 -82px;}
 
 .birdy{vertical-align:bottom;list-style-image:url(/static/spectrum/images/birdy.gif);width:127px;height:72px;}
 #header #title{padding-left:.70em;padding-top:2.1em;}
@@ -40,7 +41,7 @@ a:hover{text-decoration:underline;}
 #dark-color .main #area{width:950px;text-align:center;margin-top:5em;margin-left:auto;margin-right:auto;}
 #twitter-topper{clear:both;color:#fff;background:#bac9d5;height:60px;padding-right:1em;cursor:pointer;border-top:1px solid #fff;}
 #twitter-topper:hover{}
-#twitter-color{overflow-x: hidden;background:#bac9d5;display:none;width:100%;}
+#twitter-color{overflow-x: hidden;background:#bac9d5;width:100%;}
 #twitter-color:hover{}
 #twitter-color .main{background:#fff;font-size:1.2em;margin:0 1em;border-bottom:.5em solid #bac9d5;text-align:center;padding:2em 1.5em 1em 2em;}
 #twitter-color .main #twitter{color:#999;text-align:center;width:450px;margin:0 auto;}
@@ -118,9 +119,9 @@ a:hover{text-decoration:underline;}
 #lastfm-color .main h3{font-size:1.8em;}
 
 .topper-title{float:left;padding-left:1em;color:#fff;text-decoration:none;font-size:1.7em;padding-top:.85em;}
-.twitter-plus{float:right;padding-right:.5em;color:#fff;text-decoration:none;font-size:2.2em;padding-top:.6em;}
+.twitter-plus{float:right;padding-right:.5em;color:#fff;text-decoration:none;font-size:2.2em;padding-top:.6em;display:none;}
 .twitter-plus:hover{color:#fff;}
-.twitter-minus{float:right;padding-right:.5em;color:#fff;text-decoration:none;display:none;font-size:2.5em;padding-top:.5em;}
+.twitter-minus{float:right;padding-right:.5em;color:#fff;text-decoration:none;font-size:2.5em;padding-top:.5em;}
 .twitter-minus:hover{color:#fff}
 .tumbles-plus{float:right;padding-right:.5em;color:#fff;text-decoration:none;font-size:2.2em;padding-top:.6em;}
 .tumbles-plus:hover{color:#fff;}
