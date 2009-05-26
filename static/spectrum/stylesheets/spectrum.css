@@ -11,7 +11,7 @@ strong{font-weight:bold;}
 .center{text-align:center;}
 .none{display:none;}
 .none{visibility:hidden;}
-a{color:#537aa0;text-decoration:none;font-weight:normal;font-style:normal;}
+a{color:#537aa0;text-decoration:none;font-weight:normal;font-style:normal;font-variant:normal;}
 a:hover{text-decoration:underline;}
 #container{}
 #header{background-color:#eee;color:#959595;height:145px;padding:.25px .25px 0;font-weight:lighter;font-size:2.5em;}
@@ -30,8 +30,8 @@ a:hover{text-decoration:underline;}
 #dark-color .main #menu{float:left;font-size:1.1em;margin-left:-10em;margin-top:.1em;}
 #dark-color .main #menu ul{}
 #dark-color .main #menu ul li{display:inline;list-style-type:none;padding-right:1em;}
-#dark-color .main #menu a{text-decoration:none;color:#666;font-weight:normal;}
-#dark-color .main #menu a:hover{color:#bbb;}
+#dark-color .main #menu a{text-decoration:none;color:#537aa0;}
+#dark-color .main #menu a:hover{color:#aaa;}
 
 .color-box{}
 
