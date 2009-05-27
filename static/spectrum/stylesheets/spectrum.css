@@ -11,7 +11,7 @@ strong{font-weight:bold;}
 .center{text-align:center;}
 .none{display:none;}
 .none{visibility:hidden;}
-a{color:#537aa0;text-decoration:none;font-weight:normal;font-style:normal;font-variant:normal;}
+a{color:#4e85bb;text-decoration:none;font-weight:normal;font-style:normal;font-variant:normal;}
 a:hover{text-decoration:underline;}
 #container{}
 #header{color:#959595;height:120px;font-weight:lighter;background:#eee;padding-right:.25px;;padding-left:.25px;}
