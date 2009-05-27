@@ -58,11 +58,11 @@ a:hover{text-decoration:underline;}
 #dark-color:hover{}
 #dark-color .main{background:#fff url(/static/spectrum/images/boxes_animated.gif) no-repeat right top;margin:0 1em;border-bottom:.5em solid #eee;font-weight:normal;padding:.5em 2em 1em;}
 #dark-color .main #area{width:950px;text-align:center;margin-left:auto;margin-right:auto;margin-top:6.5em;}
-#twitter-topper{clear:both;color:#fff;background:#bac9d5;height:60px;padding-right:1em;cursor:pointer;border-top:1px solid #fff;}
+#twitter-topper{clear:both;color:#fff;height:60px;padding-right:1em;cursor:pointer;border-top:1px solid #fff;background-color:#bfcdda;}
 #twitter-topper:hover{}
-#twitter-color{overflow-x: hidden;background:#bac9d5;width:100%;}
+#twitter-color{overflow-x: hidden;width:100%;background-color:#bfcdda;}
 #twitter-color:hover{}
-#twitter-color .main{background:#fff;font-size:1.2em;margin:0 1em;border-bottom:.5em solid #bac9d5;text-align:center;padding:2em 1.5em 1em 2em;}
+#twitter-color .main{background:#fff;font-size:1.2em;margin:0 1em;border-bottom:.5em solid #bfcdda;text-align:center;padding:2em 1.5em 1em 2em;}
 #twitter-color .main #twitter{color:#999;text-align:center;width:450px;margin:0 auto;}
 #twitter-color .main #twitter p{text-align:left;}
 #twitter-color .main #twitter a{color:#bbb;text-decoration:none;}
@@ -70,11 +70,11 @@ a:hover{text-decoration:underline;}
 #twitter-color .main .twitter-link{text-align:right;font-size:26px;margin-top:1em;margin-right:-.3em;}
 #twitter-color .main .twitter-link a{color:#bac9d5;font-weight:bold;text-decoration:none;}
 #twitter-color .main .twitter-link a:hover{color:#444;}
-#tumbles-topper{clear:both;color:#fff;background:#adc2d2;height:60px;padding-right:1em;cursor:pointer;border-top:1px solid #fff;}
+#tumbles-topper{clear:both;color:#fff;background:#a3bfd4;height:60px;padding-right:1em;cursor:pointer;border-top:1px solid #fff;}
 #tumbles-topper:hover{}
-#tumbles-color{overflow-x: hidden;background:#adc2d2;display:none;width:100%;}
+#tumbles-color{overflow-x: hidden;background:#a3bfd4;display:none;width:100%;}
 #tumbles-color:hover{}
-#tumbles-color .main{background:#fff;font-size:1.2em;margin:0 1em;border-bottom:.5em solid #adc2d2;padding:2em 2em 1em;text-align:center;}
+#tumbles-color .main{background:#fff;font-size:1.2em;margin:0 1em;border-bottom:.5em solid #a3bfd4;padding:2em 2em 1em;text-align:center;}
 #tumbles-color .main #tumbles{color:#999;;width:840px;margin-right:auto;margin-left:auto;text-align:center;}
 #tumbles-color .main .tumbles-link{text-align:right;font-size:26px;margin-top:1em;margin-right:-.5em;}
 #tumbles-color .main .tumbles-link a{color:#adc2d2;font-weight:bold;text-decoration:none;}
@@ -86,33 +86,33 @@ a:hover{text-decoration:underline;}
 .inside-brick a{display:inline;}
 .inside-brick:hover{}
 .tumble-hover{position:absolute;left:0px;right:0px;top:0px;bottom:0px;padding-top:20px;background-color:#000;display:none;z-index:10;text-align:center;color:#fff;font:Bold 18px Helvetica, sans-serif;opacity:0.75;filter:alpha(opacity = 75);-moz-opacity:.75;}
-#words-topper{clear:both;color:#fff;background:#8c9aa9;height:60px;padding-right:1em;cursor:pointer;border-top:1px solid #fff;}
+#words-topper{clear:both;color:#fff;background:#8096ac;height:60px;padding-right:1em;cursor:pointer;border-top:1px solid #fff;}
 #words-topper:hover{}
-#words-color{overflow-x: hidden;background:#8c9aa9;display:none;width:100%;}
+#words-color{overflow-x: hidden;background:#8096ac;display:none;width:100%;}
 #words-color:hover{}
 #words-color .main .words-link{text-align:right;font-size:26px;margin-top:1em;margin-right:-.5em;}
 #words-color .main .words-link a{color:#8c9aa9;font-weight:bold;text-decoration:none;}
 #words-color .main .words-link a:hover{color:#444;}
-#words-color .main{background:#fff;font-size:1.2em;margin:0 1em;border-bottom:.5em solid #8c9aa9;padding:2em 2em 1em;text-align:center;}
+#words-color .main{background:#fff;font-size:1.2em;margin:0 1em;border-bottom:.5em solid #8096ac;padding:2em 2em 1em;text-align:center;}
 #words-color .main #words{color:#999;text-align:center;width:420px;margin:0 auto;text-transform:lowercase;}
 #words-color .main #words p{text-align:left;}
 #words-color .main #words .source{text-align:right;font-size:.9em;line-height:.9px;margin-top:1em;}
 #words-color .main .source a{color:#bbb;text-decoration:none;}
 #words-color .main .source a:hover{color:#999;}
-#flickr-topper{clear:both;color:#fff;background:#707c87;height:60px;padding-right:1em;cursor:pointer;border-top:1px solid #fff;}
+#flickr-topper{clear:both;color:#fff;background:#64798a;height:60px;padding-right:1em;cursor:pointer;border-top:1px solid #fff;}
 #flickr-topper:hover{}
-#flickr-color{overflow-x: hidden;background:#707c87;display:none;width:100%;}
+#flickr-color{overflow-x: hidden;background:#64798a;display:none;width:100%;}
 #flickr-color:hover{color:#444;}
-#flickr-color .main{background:#fff;font-size:1.2em;margin:0 1em;border-bottom:.5em solid #707c87;padding:2em 2em 1em;text-align:center;}
+#flickr-color .main{background:#fff;font-size:1.2em;margin:0 1em;border-bottom:.5em solid #64798a;padding:2em 2em 1em;text-align:center;}
 #flickr-color .main #flickr{color:#999;;width:840px;margin-right:auto;margin-left:auto;text-align:center;}
 #flickr-color .main .flickr-link{text-align:right;font-size:26px;margin-top:1em;margin-right:-.5em;}
 #flickr-color .main .flickr-link a{color:#707c87;font-weight:bold;text-decoration:none;}
 #flickr-color .main .flickr-link a:hover{color:#333;}
-#delicious-topper{clear:both;color:#fff;background:#434b50;height:60px;padding-right:1em;cursor:pointer;border-top:1px solid #fff;}
+#delicious-topper{clear:both;color:#fff;background:#3a4952;height:60px;padding-right:1em;cursor:pointer;border-top:1px solid #fff;}
 #delicious-topper:hover{}
-#delicious-color{overflow-x: hidden;background:#434b50;display:none;width:100%;}
+#delicious-color{overflow-x: hidden;background:#3a4952;display:none;width:100%;}
 #delicious-color:hover{}
-#delicious-color .main{background:#fff;margin:0 1em;border-bottom:.5em solid #434b50;text-align:center;padding:2em 2em 1em;}
+#delicious-color .main{background:#fff;margin:0 1em;border-bottom:.5em solid #3a4952;text-align:center;padding:2em 2em 1em;}
 #delicious-color .main #delicious{font-size:1.1em;}
 #delicious-color .main #delicious a{color:#888;text-decoration:none;}
 #delicious-color .main #delicious a:hover{color:#bbb;text-decoration:none;}
@@ -120,11 +120,11 @@ a:hover{text-decoration:underline;}
 #delicious-color .main .delicious-link a{color:#434b50;font-weight:bold;text-decoration:none;}
 #delicious-color .main .delicious-link a:hover{color:#222;}
 #delicious-color .main ul li{float:left;margin-right:2em;line-height:1.6em;}
-#lastfm-topper{clear:both;color:#fff;background:#5b676e;height:60px;padding-right:1em;cursor:pointer;border-top:1px solid #fff;}
+#lastfm-topper{clear:both;color:#fff;background:#506571;height:60px;padding-right:1em;cursor:pointer;border-top:1px solid #fff;}
 #lastfm-topper:hover{}
-#lastfm-color{overflow-x: hidden;background:#5b676e;display:none;width:100%;}
+#lastfm-color{overflow-x: hidden;background:#506571;display:none;width:100%;}
 #lastfm-color:hover{}
-#lastfm-color .main{background:#fff;margin:0 1em;border-bottom:.5em solid #5b676e;text-align:center;padding:2em 2em 1em;}
+#lastfm-color .main{background:#fff;margin:0 1em;border-bottom:.5em solid #506571;text-align:center;padding:2em 2em 1em;}
 #lastfm-color .main .lastfmsuper{margin-right:auto;margin-left:auto;width:850px;}
 #lastfm-color .main .lastfm{width:425px;float:left;margin-left:45px;}
 #lastfm-color .main .lastfm{margin-left:0;}
