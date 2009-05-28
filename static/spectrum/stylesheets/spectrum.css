@@ -15,7 +15,7 @@ a{color:#4e85bb;text-decoration:none;font-weight:normal;font-style:normal;font-v
 a:hover{text-decoration:underline;}
 #container{}
 #header{color:#959595;height:120px;font-weight:lighter;background:#eee;padding-right:.25px;;padding-left:.25px;}
-#birdy{background-image:url(/static/spectrum/images/birdy.png);width:127px;height:72px;float:left;margin:1.5em .75em 0 .5em;}
+#birdy{background-image:url(/static/spectrum/images/birdy.png);width:127px;height:72px;float:left;margin:1.5em .75em 0 .1em;}
 #maintitle{width:475px;height:64px;background:url(/static/spectrum/images/maintitle.png) no-repeat;margin-left:.3em;display:block;float:left;margin-top:2.8em;}
 #maintitle:hover{background-position:0 -82px;}
 #boxes{display:block;float:left;background:url(/static/spectrum/images/newboxes.gif) no-repeat;width:293px;height:48px;margin-top:.7em;margin-left:.5em;}
@@ -36,7 +36,7 @@ a:hover{text-decoration:underline;}
 #menu ul li{float:left;list-style-type:none;padding-left:.5em;font-size:.5em;display:inline;}
 */
 
-
+/*
 #dark-color .main #menu{float:left;margin-left:-12em;margin-top:-.5em;}
 #dark-color .main #menu ul{}
 #dark-color .main #menu ul li{float:left;padding-left:1.5em;}
@@ -50,13 +50,30 @@ a:hover{text-decoration:underline;}
 .rss{background:url(/static/spectrum/images/menu/rss.png) no-repeat;float:left;display:block;width:15px;height:12px;margin:0;padding:0;}
 .exit{background:url(/static/spectrum/images/menu/exit.png) no-repeat;float:left;display:block;width:19px;height:12px;margin:0;padding:0;}
 #dark-color .main #menu ul li a:hover{background-position:0 -18px;}
+#dark-color .main #menu ul li a{display:block;float:left;}*/
+
+
+#dark-color .main #menu{float:right;margin-right:-1.9em;margin-top:-1.2em;}
+#dark-color .main #menu ul{}
+#dark-color .main #menu ul li{padding-bottom:2px;}
+
+.girl{background:url(/static/spectrum/images/menubox/girl.png) no-repeat right top;float:left;display:block;width:65px;height:12px;margin:0;padding:0;}
+.site{background:url(/static/spectrum/images/menubox/site.png) no-repeat right top;float:left;display:block;width:65px;height:12px;margin:0;padding:0;}
+.cinema{background:url(/static/spectrum/images/menubox/cinema.png) no-repeat right top;float:left;display:block;width:65px;height:12px;margin:0;padding:0;}
+.past{background:url(/static/spectrum/images/menubox/past.png) no-repeat right top;float:left;display:block;width:65px;height:12px;margin:0;padding:0;}
+.contact{background:url(/static/spectrum/images/menubox/contact.png) no-repeat right top;float:left;display:block;width:65px;height:12px;margin:0;padding:0;}
+.rss{background:url(/static/spectrum/images/menubox/rss.png) no-repeat right top;float:left;display:block;width:65px;height:12px;margin:0;padding:0;}
+.exit{background:url(/static/spectrum/images/menubox/exit.png) no-repeat right top;float:left;display:block;width:65px;height:12px;margin:0;padding:0;}
+.girl:hover .menu_item{}
+
+#dark-color .main #menu ul li a:hover{background-position:0 -18px;}
 #dark-color .main #menu ul li a{display:block;float:left;}
 
-.color-box{}
+
 
 #dark-color{background:#eee;}
 #dark-color:hover{}
-#dark-color .main{background:#fff url(/static/spectrum/images/boxes_animated.gif) no-repeat right top;margin:0 1em;border-bottom:.5em solid #eee;font-weight:normal;padding:.5em 2em 1em;}
+#dark-color .main{background:#fff url(/static/spectrum/images/boxes_animated_no.gif) no-repeat left top;margin:0 1em;border-bottom:.5em solid #eee;font-weight:normal;padding:.5em 2em 1em;}
 #dark-color .main #area{width:950px;text-align:center;margin-left:auto;margin-right:auto;margin-top:6.5em;}
 #twitter-topper{clear:both;color:#fff;height:60px;padding-right:1em;cursor:pointer;border-top:1px solid #fff;background-color:#bfcdda;}
 #twitter-topper:hover{}
