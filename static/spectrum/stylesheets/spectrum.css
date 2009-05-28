@@ -75,7 +75,7 @@ a:hover{text-decoration:underline;}
 
 #dark-color{background:#eee;}
 #dark-color:hover{}
-#dark-color .main{background:#fff url(/static/spectrum/images/boxes_animated_no.gif) no-repeat left top;margin:0 1em;border-bottom:.5em solid #eee;font-weight:normal;padding-bottom:1em;padding-top:1px;}
+#dark-color .main{background:#fff url(/static/spectrum/images/boxes_animated_no.gif) no-repeat left top;margin:0 1em;border-bottom:.5em solid #eee;font-weight:normal;padding-bottom:1em;padding-top:1px;padding-left:2em;}
 #dark-color .main #area{width:950px;text-align:center;margin-left:auto;margin-right:auto;margin-top:6.5em;}
 #twitter-topper{clear:both;color:#fff;height:60px;padding-right:1em;cursor:pointer;border-top:1px solid #fff;background-color:#bfcdda;}
 #twitter-topper:hover{}
