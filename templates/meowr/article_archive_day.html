@@ -5,6 +5,8 @@
 
 {% block content %}
 <h1>The Past for <span class="special">{{ day|date:"l F j, Y"}}</span></h1>
+<div id="listing">
 {% include "meowr/articles.html" %}
 {% include "meowr/nextlast.html" %}
+</div>
 {% endblock %}

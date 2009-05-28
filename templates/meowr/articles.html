@@ -13,7 +13,14 @@
 </div>
 <div class="meta">
 <dl class="posted">
-<dt><a href="{{ object.get_absolute_url }}" title="{{ article.title}}"><span class="special">Posted</span> {{ object.pub_date|timesince }} ago{% comment %}{{ object.pub_date|date:"F j, Y" }}{% endcomment %}</a></dt>
+<dt>Posted
+<a href="{{ object.get_absolute_url }}" title="{{ article.title}}">
+{% if object_list|length_is:"1" %}
+{{ object.pub_date|timesince }} ago
+{% else %}
+{{ object.pub_date|date:"F j, Y" }}
+{% endif %}
+</a></dt>
 </dl>
 {% if object.tags %}
 <dl>

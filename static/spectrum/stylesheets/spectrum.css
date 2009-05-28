@@ -2,6 +2,7 @@
 html,body{background:#fff;margin:0;padding:0}
 body{color:#777a7e;font:14px/20px Helvetica, Arial, Geneva, sans-serif;font-weight:normal;}
 h1, h2, h3, h4, h5{font-family:"Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;text-align:left;}
+h1{color:#444;text-decoration:none;font-weight:200;margin-bottom:1em;text-align:left;font-size:2.9em;}
 h3{color:#bbb;text-decoration:none;font-weight:200;font-size:2.2em;}
 h1 .special{color:#bbb}
 strong{font-weight:bold;}
@@ -193,8 +194,13 @@ ul li{margin-top:.8em;}
 .star4{list-style-image: url(/static/spectrum/images/stars/star4.gif);}
 .star5{list-style-image: url(/static/spectrum/images/stars/star5.gif);}
 
-.wrapper{float:left;margin-right:-240px;margin-bottom:5em;}
+.wrapper{float:left;margin-right:-240px;margin-bottom:1em;}
 .content{margin-right:220px;width:675px;}
+
+#listing h1{font-size:2.5em;}
+#listing .wrapper{float:left;margin-right:-240px;margin-bottom:5em;}
+#listing .content{margin-right:220px;width:675px;}
+
 .meta{float:right;width:220px;color:#bbb;line-height:2em;text-align:left;border-left:1px solid #eee;padding-left:1.5em;}
 .meta dt, .meta dd{display:inline;}
 .meta a{color:#888;text-decoration:none;}
@@ -208,7 +214,7 @@ ul li{margin-top:.8em;}
 .content a img:hover{background:#efefef;}
 .content .excerpt{text-align:right;padding-right:30px;}
 
-#dark-color .main h1{color:#444;text-decoration:none;font-weight:200;margin-bottom:1em;text-align:left;font-size:2.9em;}
+#dark-color .main h1{}
 #dark-color .main h1 a{color:#444;text-decoration:none;font-weight:200;}
 #dark-color .main h1 a:hover{border-bottom:1px solid #444;}
 #dark-color .main h1 .special{}

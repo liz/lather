@@ -9,6 +9,8 @@
 
 {% block content %}
 <h1>Rating <span class="special">{{ rating.description|title }}</a></h1>
+<div id="listing">
 {% include "meowr/articles.html" %}
 {% include "meowr/nextlast.html" %}
+</div>
 {% endblock %}
