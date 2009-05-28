@@ -53,10 +53,11 @@ a:hover{text-decoration:underline;}
 #dark-color .main #menu ul li a{display:block;float:left;}*/
 
 
-#dark-color .main #menu{float:right;margin-right:-1.9em;margin-top:-1.2em;}
+#dark-color .main #menu{float:left;margin-left:31em;}
 #dark-color .main #menu ul{}
-#dark-color .main #menu ul li{padding-bottom:2px;}
+#dark-color .main #menu ul li{display:inline;}
 
+.index{background:url(/static/spectrum/images/menubox/index.png) no-repeat right top;float:left;display:block;width:65px;height:12px;margin:0;padding:0;}
 .girl{background:url(/static/spectrum/images/menubox/girl.png) no-repeat right top;float:left;display:block;width:65px;height:12px;margin:0;padding:0;}
 .site{background:url(/static/spectrum/images/menubox/site.png) no-repeat right top;float:left;display:block;width:65px;height:12px;margin:0;padding:0;}
 .cinema{background:url(/static/spectrum/images/menubox/cinema.png) no-repeat right top;float:left;display:block;width:65px;height:12px;margin:0;padding:0;}
@@ -73,7 +74,7 @@ a:hover{text-decoration:underline;}
 
 #dark-color{background:#eee;}
 #dark-color:hover{}
-#dark-color .main{background:#fff url(/static/spectrum/images/boxes_animated_no.gif) no-repeat left top;margin:0 1em;border-bottom:.5em solid #eee;font-weight:normal;padding:.5em 2em 1em;}
+#dark-color .main{background:#fff url(/static/spectrum/images/boxes_animated_no.gif) no-repeat left top;margin:0 1em;border-bottom:.5em solid #eee;font-weight:normal;padding-bottom:1em;padding-top:1px;}
 #dark-color .main #area{width:950px;text-align:center;margin-left:auto;margin-right:auto;margin-top:6.5em;}
 #twitter-topper{clear:both;color:#fff;height:60px;padding-right:1em;cursor:pointer;border-top:1px solid #fff;background-color:#bfcdda;}
 #twitter-topper:hover{}
