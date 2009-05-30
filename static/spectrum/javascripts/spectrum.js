@@ -1,7 +1,5 @@
 $(document).ready(function() {
 
-$('#top-menu').animateMenu($('#top-menu li:first a').css('left'));
-
 Cufon.replace([ '.exit_tag', '.month_title_small', ]);
 
 Cufon.replace(':header a', {
@@ -159,6 +157,8 @@ var color_classes = new Array("star1", "star2", "star3", "star4", "star5")
 	});
 
 });
+
+$('#top-menu').animateMenu($('#top-menu li:first a').css('left'));
 
 $.fn.animateMenu = function(initialPos) {
 	$this = this;
