@@ -1,5 +1,7 @@
 $(document).ready(function() {
-	
+
+$('#top-menu').animateMenu($('#top-menu li:first a').css('left'));
+
 Cufon.replace([ '.exit_tag', '.month_title_small', ]);
 
 Cufon.replace(':header a', {
@@ -157,3 +159,14 @@ var color_classes = new Array("star1", "star2", "star3", "star4", "star5")
 	});
 
 });
+
+$.fn.animateMenu = function(initialPos) {
+	$this = this;
+	var el = $('li.animated:first a', $this);
+	var pos = el.css('left');
+
+	el.css({'left': initialPos}).animate( { left: pos, opacity: 1 }, 600, function() {
+		$(this).parents('li:first').removeClass('animated');
+		$this.animateMenu(pos);
+	});
+};
