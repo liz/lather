@@ -6,6 +6,8 @@ Cufon.replace(':header a', {
     hover: true
 });
 
+$('#top-menu').animateMenu($('#top-menu li:first a').css('left'));
+
 $('#twitter-topper').click(function() {
   $('#twitter-color').slideToggle();
   $('.twitter-minus').toggle();
@@ -157,8 +159,6 @@ var color_classes = new Array("star1", "star2", "star3", "star4", "star5")
 	});
 
 });
-
-$('#top-menu').animateMenu($('#top-menu li:first a').css('left'));
 
 $.fn.animateMenu = function(initialPos) {
 	$this = this;
