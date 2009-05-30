@@ -6,8 +6,6 @@ Cufon.replace(':header a', {
     hover: true
 });
 
-$('#top-menu').animateMenu($('#top-menu li:first a').css('left'));
-
 $('#twitter-topper').click(function() {
   $('#twitter-color').slideToggle();
   $('.twitter-minus').toggle();
@@ -140,6 +138,7 @@ $('#lastfm-topper').click(function() {
   return false;
 });
 
+$('#top-menu').animateMenu($('#top-menu li:first a').css('left'));
 
 $('a[rel*=lightbox]').fancybox();
 
