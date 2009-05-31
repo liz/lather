@@ -14,7 +14,7 @@
 
 <link href="/static/spectrum/stylesheets/spectrum.css" rel="stylesheet" type="text/css" />
 <script src="/static/spectrum/javascripts/jquery.js" type="text/javascript"></script>
-<script src="/static/spectrum/javascripts/spectrum.js" type="text/javascript"></script>
+<script src="/static/spectrum/javascripts/spectrumd.js" type="text/javascript"></script>
 <script src="/static/spectrum/javascripts/fancybox/fancybox-1.2.1.js" type="text/javascript"></script>
 <link href="/static/spectrum/javascripts/fancybox/fancybox.css" rel="stylesheet" type="text/css" />
 <script src="/static/spectrum/javascripts/fancybox/easing.js" type="text/javascript"></script>
@@ -22,7 +22,7 @@
 <script src="/static/spectrum/javascripts/Helvetica_Neue_LT_Std_300.font.js" type="text/javascript"></script>
 </head>
 
-<body id="body"><div class="hidden"><a id="top"></a></div>
+<body id="{% block bodyid %}{% endblock %}"><div class="hidden"><a id="top"></a></div>
 <div id="container">
 <div id="header">
 <div id="title">
@@ -36,9 +36,8 @@
 <div id="menu">
 <ul id="top-menu" class="no_change">
 <!--><li><a href="/" class="index" title="back to the index"> </a></li><!-->
-<li><a href="/girl/" class="girl" title="about the girl"> </a></li>
+<li class="animated"><a href="/girl/" class="girl" title="about the girl"> </a></li>
 <li class="animated"><a href="/site/" class="site" title="about the site"> </a></li>
-
 <li class="animated"><a href="/cinema/" class="cinema" title="bite-sized movie reviews"> </a></li>
 <li class="animated"><a href="/articles/" class="past" title="past articles"> </a></li>
 <li class="animated"><script type="text/javascript">
@@ -66,8 +65,8 @@ while(x=eval(x));}hiveware_enkoder();
 
 //]]>
 </script></li>
-<li class="animated"><a href="http://feeds.latherrinserepeat.org/all_articles/" class="rss" title="RSS Feed"> </a></li>
 <li class="animated"><a href="/exits/" class="exit" title="The Way Out"> </a></li>
+<li class="animated"><a href="http://feeds.latherrinserepeat.org/all_articles/" class="rss" title="RSS Feed"> </a></li>
 </ul>
 </div>
 <div id="area">

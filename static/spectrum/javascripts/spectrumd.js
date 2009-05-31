@@ -1,4 +1,9 @@
-$(document).ready(function() {
+$(function() {
+	if($('body#index').length > 0) {
+		setTimeout('animatedMenu()', 600);
+	} else {
+		$('#top-menu li a').css('opacity', 1);
+	}
 
 Cufon.replace([ '.exit_tag', '.month_title_small', ]);
 
@@ -138,9 +143,8 @@ $('#lastfm-topper').click(function() {
   return false;
 });
 
-$('#top-menu').animateMenu($('#top-menu li:first a').css('left'));
 
-$('a[rel*=lightbox]').fancybox();
+//$('a[rel*=lightbox]').fancybox();
 
 var color_classes = new Array("star1", "star2", "star3", "star4", "star5")
 
@@ -156,17 +160,19 @@ var color_classes = new Array("star1", "star2", "star3", "star4", "star5")
 			});
 		}
 	});
-
 });
 
+function animatedMenu() {
+	$('#top-menu').animateMenu($('#top-menu li:first a').css('left'));
+}
 
 $.fn.animateMenu = function(initialPos) {
 	$this = this;
 	var el = $('li.animated:first a', $this);
 	var pos = el.css('left');
-	
-		el.css({'left': initialPos}).animate( { left: pos, opacity: 1 }, 700, function() {
-			$(this).parents('li:first').removeClass('animated');
-			$this.animateMenu(pos);
-		});
+
+	el.css({'left': initialPos}).animate( { left: pos, opacity: 1 }, 700, function() {
+		$(this).parents('li:first').removeClass('animated');
+		$this.animateMenu(pos);
+	});
 };

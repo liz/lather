@@ -60,10 +60,10 @@
 <dt>Navigate</dt>
 <dd>
 {% if object.get_previous_article %}
-<a class="ajaxLoad" href="{{ object.get_previous_article.get_absolute_url }}">rewind</a>
+<a href="{{ object.get_previous_article.get_absolute_url }}">rewind</a>
 {% endif %} / 
 {% if object.get_next_article %}
-<a class="ajaxLoad" href="{{ object.get_next_article.get_absolute_url }}">forward</a>
+<a href="{{ object.get_next_article.get_absolute_url }}">forward</a>
 {% endif %}
 </dd>
 </dl>

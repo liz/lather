@@ -41,13 +41,13 @@ a:hover{text-decoration:underline;}
 #dark-color .main #menu ul li a{display:block;float:left;}
 
 .index{background:url(/static/spectrum/images/menuboxright/index.png) no-repeat right top;float:left;display:block;width:57px;height:12px;margin-left:.5em;padding:0;}
-.girl{background:url(/static/spectrum/images/menuboxright/girl.png) no-repeat right top;float:left;width:57px;height:12px;margin-left:.5em;padding:0;display:block;z-index:10;position:absolute;left:28em;top:9.5em;opacity:1;}
-.site{background:url(/static/spectrum/images/menuboxright/site.png) no-repeat right top;float:left;width:57px;height:12px;margin-left:.5em;padding:0;display:block;z-index:9;position:absolute;left:33em;top:9.5em;}
+.girl{background:url(/static/spectrum/images/menuboxright/girl.png) no-repeat right top;float:left;width:57px;height:12px;margin-left:.5em;padding:0;display:block;z-index:10;position:absolute;left:28em;top:9.5em;opacity:0;}
+.site{background:url(/static/spectrum/images/menuboxright/site.png) no-repeat right top;float:left;width:57px;height:12px;margin-left:.5em;padding:0;display:block;z-index:9;position:absolute;left:33em;top:9.5em;opacity:0;}
 .cinema{background:url(/static/spectrum/images/menuboxright/cinema.png) no-repeat right top;float:left;width:57px;height:12px;margin-left:.5em;padding:0;display:block;z-index:8;position:absolute;left:38em;top:9.5em;opacity:0;}
 .past{background:url(/static/spectrum/images/menuboxright/past.png) no-repeat right top;float:left;width:57px;height:12px;margin-left:.5em;padding:0;display:block;z-index:7;position:absolute;left:43em;top:9.5em;opacity:0;}
 .contact{background:url(/static/spectrum/images/menuboxright/contact.png) no-repeat right top;float:left;width:57px;height:12px;margin-left:.5em;margin-right:.2em;padding:0;display:block;z-index:6;position:absolute;left:48em;top:9.5em;opacity:0;}
-.rss{background:url(/static/spectrum/images/menuboxright/rss.png) no-repeat right top;float:left;width:57px;height:12px;margin-left:.5em;padding:0;display:block;z-index:5;position:absolute;left:53em;top:9.5em;opacity:0;}
-.exit{background:url(/static/spectrum/images/menuboxright/exit.png) no-repeat right top;float:left;width:57px;height:12px;margin-left:.5em;padding:0;display:block;z-index:4;position:absolute;left:58em;top:9.5em;opacity:0;}
+.exit{background:url(/static/spectrum/images/menuboxright/exit.png) no-repeat right top;float:left;width:57px;height:12px;margin-left:.5em;padding:0;display:block;z-index:5;position:absolute;left:53em;top:9.5em;opacity:0;}
+.rss{background:url(/static/spectrum/images/menuboxright/rss.png) no-repeat right top;float:left;width:57px;height:12px;margin-left:.5em;padding:0;display:block;z-index:4;position:absolute;left:58em;top:9.5em;opacity:0;}
 
 #dark-color{background:#eee;}
 #dark-color:hover{}
