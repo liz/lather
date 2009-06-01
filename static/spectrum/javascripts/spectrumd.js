@@ -171,7 +171,7 @@ $.fn.animateMenu = function(initialPos) {
 	var el = $('li.animated:first a', $this);
 	var pos = el.css('left');
 
-	el.css({'left': initialPos}).animate( { left: pos, opacity: 1 }, 600, function() {
+	el.css({'left': initialPos}).animate( { left: pos, opacity: 1 }, 650, function() {
 		$(this).parents('li:first').removeClass('animated');
 		$this.animateMenu(pos);
 	});
