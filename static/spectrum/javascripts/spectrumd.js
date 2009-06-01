@@ -1,6 +1,6 @@
 $(function() {
 	if($('body#index').length > 0) {
-		setTimeout('animatedMenu()', 700);
+		setTimeout('animatedMenu()', 800);
 	} else {
 		$('#top-menu li a').css('opacity', 1);
 	}
