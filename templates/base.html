@@ -7,10 +7,10 @@
 {% block feeds %}
 <link href="http://feeds.latherrinserepeat.org/all_articles/" rel="alternate" type="application/rss+xml" title="All Posts" />
 {% endblock %}
-<meta name="viewport" content="width=700, initial-scale=0.45, minimum-scale=0.45" />
+<!--><meta name="viewport" content="width=700, initial-scale=0.45, minimum-scale=0.45" /><!-->
 <link rel="shortcut icon" href="/static/spectrum/images/heart.ico" />
 
-<!--><script src="http://mint.latherrinserepeat.org/?js" type="text/javascript"></script><!-->
+<script src="http://mint.latherrinserepeat.org/?js" type="text/javascript"></script>
 
 <link href="/static/spectrum/stylesheets/spectrum.css" rel="stylesheet" type="text/css" />
 <script src="/static/spectrum/javascripts/jquery.js" type="text/javascript"></script>
@@ -212,7 +212,7 @@ while(x=eval(x));}hiveware_enkoder();
 
 <div id="footer">
 <p>
-All design, code, and content copyright <script type="text/javascript">
+All design, code, and content &copy; <script type="text/javascript">
 //<![CDATA[
 
 function hiveware_enkoder(){var i,j,x,y,x=
@@ -234,7 +234,7 @@ function hiveware_enkoder(){var i,j,x,y,x=
 while(x=eval(x));}hiveware_enkoder();
 
 //]]>
-</script>. Probably valid HTML and CSS. Built on <a href="http://www.djangoproject.com/" title="Django!">Django</a>. Hosted by <a href="http://mediatemple.net/" title="Media Temple!">(mt)</a>. <a href="#top">Top?</a>
+</script>. Probably valid XHTML and CSS. Built on <a href="http://www.djangoproject.com/" title="Django!">Django</a>. Hosted by <a href="http://mediatemple.net/" title="Media Temple!">(mt)</a>. <a href="#top">Top?</a>
 </p>
 <div id="search">
 <form method="get" action="/search/">
@@ -242,6 +242,11 @@ while(x=eval(x));}hiveware_enkoder();
 <label for="search" class="none">Search: </label><input type="text" name="q" id="id_q" />
 </fieldset>
 </form>
+</div>
+<div class="none">
+<a title="Clicky Web Analytics" href="http://getclicky.com/84692"><img alt="Clicky Web Analytics" src="http://static.getclicky.com/media/links/badge.gif" border="0" width="0" height="0" /></a>
+<script src="http://static.getclicky.com/84692.js" type="text/javascript"></script>
+<noscript><p><img alt="Clicky" width="0" height="0" src="http://static.getclicky.com/84692-db10.gif" /></p></noscript>
 </div>
 </div>
 </body>
