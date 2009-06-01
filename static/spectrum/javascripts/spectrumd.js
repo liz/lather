@@ -1,6 +1,6 @@
 $(function() {
 	if($('body#index').length > 0) {
-		setTimeout('animatedMenu()', 800);
+		setTimeout('animatedMenu()', 1000);
 	} else {
 		$('#top-menu li a').css('opacity', 1);
 	}
@@ -171,7 +171,7 @@ $.fn.animateMenu = function(initialPos) {
 	var el = $('li.animated:first a', $this);
 	var pos = el.css('left');
 
-	el.css({'left': initialPos}).animate( { left: pos, opacity: 1 }, 700, function() {
+	el.css({'left': initialPos}).animate( { left: pos, opacity: 1 }, 600, function() {
 		$(this).parents('li:first').removeClass('animated');
 		$this.animateMenu(pos);
 	});
