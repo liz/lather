@@ -144,7 +144,7 @@ $('#lastfm-topper').click(function() {
 });
 
 
-//$('a[rel*=lightbox]').fancybox();
+$('a[rel*=lightbox]').fancybox();
 
 var color_classes = new Array("star1", "star2", "star3", "star4", "star5")
 
@@ -171,7 +171,7 @@ $.fn.animateMenu = function(initialPos) {
 	var el = $('li.animated:first a', $this);
 	var pos = el.css('left');
 
-	el.css({'left': initialPos}).animate( { left: pos, opacity: 1 }, 600, function() {
+	el.css({'left': initialPos}).animate( { left: pos, opacity: 1 }, 650, function() {
 		$(this).parents('li:first').removeClass('animated');
 		$this.animateMenu(pos);
 	});
