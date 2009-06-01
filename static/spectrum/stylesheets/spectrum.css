@@ -217,7 +217,7 @@ ol#comments li{list-style-type:none;}
 #comments cite{font-size:.9em;float:left;width:110px;text-align:right;border-right: 1px solid #ddd;padding:0 3% 0 3%;margin:13px 3% 5% 3%;}
 #comments cite .date{text-transform:lowercase;}
 #comments cite span{display:block;}
-.said{float:left;width:65%;padding-top:.5em;display:block;}
+.said{float:left;width:65%;padding-top:.5em;display:block;text-align:left;}
 .comment-shape{display:block;}
 
 
@@ -268,7 +268,7 @@ ol#comments li{list-style-type:none;}
 #footer a{color:#888;text-decoration:none;}
 #footer a:hover{text-decoration:underline;}
 #footer p{padding-top:40px;float:left;;}
-#search{float:right;}
+#search{float:right;position:relative;}
 #search input{background:#555;border:1px solid #555;color:#999;font-size:1.2em;padding:.2em;width:12em;}
 
 .spoiler{background:#666;color:#666;}
