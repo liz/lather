@@ -144,7 +144,7 @@ $('#lastfm-topper').click(function() {
 });
 
 
-//$('a[rel*=lightbox]').fancybox();
+$('a[rel*=lightbox]').fancybox();
 
 var color_classes = new Array("star1", "star2", "star3", "star4", "star5")
 
