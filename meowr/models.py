@@ -6,6 +6,7 @@ from markdown import markdown
 from django.db.models import permalink
 from threadedcomments.moderation import moderator, CommentModerator
 from threadedcomments.models import PLAINTEXT
+from managers import *
 
 class Section(models.Model):
 
@@ -62,21 +63,23 @@ class Article(models.Model):
     (1, 'live'),
 	(3, 'hidden'),
   )
-	title 			= models.CharField(max_length=250)
-	slug  			= models.SlugField(unique_for_date='pub_date')
-	body 			= models.TextField()
-	excerpt 		= models.TextField(blank=True)
-	pub_date 		= models.DateTimeField(default=datetime.datetime.now)
+	title 			    = models.CharField(max_length=250)
+	slug  			    = models.SlugField(unique_for_date='pub_date')
+	body 			      = models.TextField()
+	excerpt 		    = models.TextField(blank=True)
+	pub_date 		    = models.DateTimeField(default=datetime.datetime.now)
 	cre_date        = models.DateTimeField(auto_now_add=True)
 	mod_date        = models.DateTimeField(auto_now=True)
-	status 			= models.IntegerField(choices=STATUS_CHOICES, default=2)
-	author 			= models.ForeignKey(User, default=1)
-	sections		= models.ManyToManyField(Section, default="articles")
-	tags			= TagField()
+	status 		    	= models.IntegerField(choices=STATUS_CHOICES, default=2)
+	author 			    = models.ForeignKey(User, default=1)
+	sections		    = models.ManyToManyField(Section, default="articles")
+	tags			      = TagField()
 	rating          = models.ManyToManyField(Rating, blank=True)
 	enable_comments = models.BooleanField(default=False)
-	body_html		= models.TextField(editable=False, blank=True)
-	excerpt_html	= models.TextField(editable=False, blank=True)
+	body_html		    = models.TextField(editable=False, blank=True)
+	excerpt_html  	= models.TextField(editable=False, blank=True)
+	objects         = models.Manager()
+	live            = LiveEntryManager()
 	
 	class Meta:
 		verbose_name = 'article'

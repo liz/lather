@@ -20,7 +20,7 @@ class LatestArtclesFeed(Feed):
 	feed_guid 			= "/feeds/all-posts/"
 	
 	def items(self):
-		return Article.objects.filter(status=Article.LIVE_STATUS)[:15]
+		return Article.live.all()[:15]
 		
 	def item_pubdate(self, item):
 		return item.pub_date
@@ -38,7 +38,7 @@ class CommentsFeed(Feed):
 	feed_guid 			= "/feeds/comments/"
 	
 	def items(self):
-		return FreeThreadedComment.objects.all()[:15]
+		return FreeThreadedComment.public.all()[:15]
 		
 	def item_pubdate(self, item):
 		return item.date_submitted
@@ -50,7 +50,7 @@ class TaggedArticlesFeed(Feed):
 		return tag
 
 	def items(self, obj):
-		return TaggedItem.objects.get_by_model(Article.objects.filter(status=Article.LIVE_STATUS), obj)[:15]
+		return TaggedItem.objects.get_by_model(Article.live.all(), obj)[:15]
 
 	def link(self, obj):
 		return '/tags/%s/' % obj
