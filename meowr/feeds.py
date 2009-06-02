@@ -31,7 +31,7 @@ class CommentsFeed(Feed):
 	description			= "Latest comments posted on Lather Rinse Repeat"
 	item_copyright		= "Liz"
 	item_author_name	= "Liz"
-	link				= "/comments/"
+	link				= "/"
 	item_link = link
 	title				= "Lather Rinse Repeat"
 	feed_type			= Atom1Feed
