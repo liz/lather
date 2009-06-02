@@ -32,7 +32,7 @@ urlpatterns = patterns('django.views.generic',
 	  'date_based.archive_month', article_info_dict, name='month_view'),
 
 	 url(r'^(?P<year>\d{4})/$',
-	  'date_based.archive_year',  dict(queryset=Article.objects.filter(status=Article.LIVE_STATUS), date_field='pub_date'), name='year_view'),
+	  'date_based.archive_year', dict(queryset=Article.objects.filter(status=Article.LIVE_STATUS), date_field='pub_date'), name='year_view'),
  
 	 url(r'^$', 'list_detail.object_list', article_list_dict, name='article_index'),
 	

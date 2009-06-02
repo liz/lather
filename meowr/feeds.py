@@ -25,6 +25,24 @@ class LatestArtclesFeed(Feed):
 	def item_pubdate(self, item):
 		return item.pub_date
 		
+class CommentsFeed(Feed):
+	author_name			= "Liz"
+	copyright			= "Liz"
+	description			= "Latest comments posted on Lather Rinse Repeat"
+	item_copyright		= "Liz"
+	item_author_name	= "Liz"
+	link				= "/comments/"
+	item_link = link
+	title				= "Lather Rinse Repeat"
+	feed_type			= Atom1Feed
+	feed_guid 			= "/feeds/comments/"
+	
+	def items(self):
+		return FreeThreadedComment.objects.all()[:15]
+		
+	def item_pubdate(self, item):
+		return item.date_submitted
+		
 		
 class TaggedArticlesFeed(Feed):
 	def get_object(self, bits):

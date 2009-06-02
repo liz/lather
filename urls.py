@@ -1,12 +1,13 @@
 from django.conf.urls.defaults import *
-from meowr.feeds import LatestArtclesFeed, TaggedArticlesFeed, SectionFeed
+from meowr.feeds import LatestArtclesFeed, TaggedArticlesFeed, SectionFeed, CommentsFeed
 from django.contrib import admin
 from django.conf import settings
 
 feeds = {
     'posts': LatestArtclesFeed,
     'tags': TaggedArticlesFeed,
-	'sections': SectionFeed,
+	  'sections': SectionFeed,
+	  'comments': CommentsFeed
 }
 
 admin.autodiscover()
