@@ -7,6 +7,12 @@ from django.db.models import permalink
 from threadedcomments.moderation import moderator, CommentModerator
 from threadedcomments.models import PLAINTEXT
 from managers import *
+from django.core.mail import send_mail
+from django.db.models import signals
+from django.db.models.base import ModelBase
+from django.template import Context, loader
+from django.contrib import comments
+from django.contrib.sites.models import Site
 
 class Section(models.Model):
 
@@ -111,11 +117,11 @@ class Article(models.Model):
 class Exit(models.Model):
 	title       = models.CharField(max_length=100)
 	slug        = models.SlugField(unique=True)
-	pub_date 	= models.DateTimeField(default=datetime.datetime.now)
+	pub_date 	  = models.DateTimeField(default=datetime.datetime.now)
 	cre_date    = models.DateTimeField(auto_now_add=True)
 	mod_date    = models.DateTimeField(auto_now=True)
-	url			= models.URLField(unique=True)
-	tags		= TagField()
+	url			    = models.URLField(unique=True)
+	tags	  	  = TagField()
 	
 	class Meta:
 	    verbose_name = 'exit'
@@ -141,3 +147,19 @@ class ArticleModerator(CommentModerator):
 	allowed_markup		= [PLAINTEXT]
 
 moderator.register(Article, ArticleModerator)
+
+class CommentModerator(CommentModerator):
+  def email(self, comment, content_object):
+    if not self.email_notificaltion:
+      return
+    if comment.is_public:
+      reciepient_list = [manager_tuple[1] for manager_tuple in settings.MANAGERS]
+      t = loader.get_template('comment_utils/comment_notification_email.txt')
+      c = Context({ 'comment' : comment,
+                  'conent_object' : content_object,
+                  'site' : site.objects.get_current(
+                  )})
+      subject = '[%s] Comment: "%s"' % (Site.objects.get_current().name,
+                                                        content_object)
+      message = t.render(c)
+      send_mail(subject, message, settings.DEFAULT_FROM_EMAIL, recipient_list, fail_silently=True)
