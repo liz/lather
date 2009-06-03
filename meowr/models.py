@@ -7,8 +7,6 @@ from django.db.models import permalink
 from threadedcomments.moderation import *
 from threadedcomments.models import PLAINTEXT
 from managers import *
-from django.core.mail import send_mail
-from django.contrib.sites.models import Site
 
 class Section(models.Model):
 
