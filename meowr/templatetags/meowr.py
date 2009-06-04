@@ -160,7 +160,7 @@ class MeowrPhotos(template.Node):
     self.var_name = var_name
 
   def render(self, context):
-    photos = Photo.objects.order_by('-upload_date')[0:5]
+    photos = Photo.objects.exclude(tags__icontains='no_blog').order_by('-upload_date')[0:5]
     context[self.var_name] = photos
     return ''
 
