@@ -202,7 +202,7 @@ class MeowrWeeklyArtists(template.Node):
     self.var_name = var_name
 
   def render(self, context):
-    artists = LastfmPost.objects.filter(chart='weeklyartistchart').order_by('chart_position')[0:10]
+    artists = LastfmPost.objects.filter(chart='weeklyartistchart').order_by('-week_start', 'chart_position')[0:10]
     context[self.var_name] = artists
     return ''
 
@@ -223,7 +223,7 @@ class MeowrWeeklyTracks(template.Node):
     self.var_name = var_name
 
   def render(self, context):
-    tracks = LastfmPost.objects.filter(chart='weeklytrackchart').order_by('chart_position')[0:10]
+    tracks = LastfmPost.objects.filter(chart='weeklytrackchart').order_by('-week_start', 'chart_position')[0:10]
     context[self.var_name] = tracks
     return ''
 
