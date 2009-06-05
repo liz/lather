@@ -49,7 +49,7 @@ class Rating(models.Model):
 		return self.slug
 		
 	def live_article_set(self):
-		from mewor.models import Aritcle
+		from meowr.models import Aritcle
 		return self.article_set.filter(status=Article.LIVE_STATUS)
 	
 class Article(models.Model):
