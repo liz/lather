@@ -12,6 +12,9 @@ feeds = {
 
 admin.autodiscover()
 
+import mobileadmin
+mobileadmin.autoregister()
+
 urlpatterns = patterns('',
     # Example:
     # (r'^lather/', include('lather.foo.urls')),
@@ -34,6 +37,13 @@ urlpatterns = patterns('',
 
 	 url(r'^', include('meowr.urls')),
 )
+
+urlpatterns += patterns('',
+  url(r'^ma/(.*)', mobileadmin.sites.site.root),
+)
+
+handler404 = 'mobileadmin.views.page_not_found'
+handler500 = 'mobileadmin.views.server_error'
 
 if settings.DEBUG:
 	 urlpatterns += patterns('',
