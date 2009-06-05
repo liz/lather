@@ -24,6 +24,8 @@ urlpatterns = patterns('',
 	 url(r'^admin/meowr/article/(?P<object_id>[0-9]+)/preview/$', 'meowr.views.preview'),
 	
 	 url(r'^admin/(.*)', admin.site.root),
+	 
+	 url(r'^ma/(.*)', mobileadmin.sites.site.root),
 	
      #url(r'^admin/', include('django.contrib.admin.urls')),
 
@@ -36,11 +38,9 @@ urlpatterns = patterns('',
 	 url (r'^search/$', 'search.views.search'),
 
 	 url(r'^', include('meowr.urls')),
+	 
 )
 
-urlpatterns += patterns('',
-  url(r'^ma/(.*)', mobileadmin.sites.site.root),
-)
 
 handler404 = 'mobileadmin.views.page_not_found'
 handler500 = 'mobileadmin.views.server_error'
