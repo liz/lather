@@ -50,7 +50,7 @@ body > .toolbar {
     border-bottom: 1px solid #37657b;
     padding: 8px 7px 3px 2px;
     height: 60px;
-    background: #417690 repeat-x;
+    background: #444 repeat-x;
     vertical-align: middle;
 }
 
@@ -65,7 +65,7 @@ body > .toolbar {
 }
 
 .toolbar > h1 a {
-    color: #f4f379;
+    color: #ccc;
     text-decoration: none;
     padding: 5px 6px;
 }
@@ -76,7 +76,7 @@ body > .toolbar {
 }
 
 .toolbar div.greeting {
-    color: #f4f379;
+    color: #ccc;
     font-size: 14px;
     font-weight: bold;
     padding: 1px 4px;
@@ -135,7 +135,7 @@ body > ul > li > a {
     margin: -10px 0 -10px -10px;
     padding: 10px 32px 10px 10px;
     text-decoration: none;
-    color: #5B80B2;
+    color: #888;
     font-size: 20px;
     display: block;
     background: url(../img/arrow.png) no-repeat right center;
@@ -165,7 +165,7 @@ body > ul > li.paginator a:link,
 body > ul > li.paginator a:active,
 body > ul > li.paginator a:visited {
     text-decoration: none;
-    color: #5B80B2;
+    color: #555;
     background: none;
     margin: -6px 8px 0px -10px;
 }
@@ -191,7 +191,7 @@ body > ul > li.paginator span a.active {
 body > ul > li.paginator a.inactive {
     border: 1px solid #ccc;
     border-top: none;
-    color: #5B80B2;
+    color: #555;
     background: #fff url(../img/nav-bg.gif) repeat-x bottom;
 }
 
@@ -228,14 +228,14 @@ body > .breadcrumbs {
 .breadcrumbs a:active,
 .breadcrumbs a:visited {
     text-decoration: none;
-    color: #5B80B2;
+    color: #555;
     background: none;
     padding: 9px 16px 9px 10px;
     margin: -9px 4px 0px -6px;
 }
 
 .breadcrumbs a:active {
-    color: #036;
+    color: #333;
 }
 
 .breadcrumbs a.active,
@@ -261,7 +261,7 @@ body > .breadcrumbs {
     margin-left: -1px;
     border: 1px solid #ccc;
     border-top: none;
-    color: #5B80B2;
+    color: #555;
     background: #fff url(../img/nav-bg.gif) repeat-x bottom;
 }
 
@@ -313,7 +313,7 @@ body > .breadcrumbs {
 .submit-row a:active,
 .submit-row a:visited {
     text-decoration: none;
-    color: #5B80B2;
+    color: #555;
     padding: 6px;
     margin: -6px 6px 0px 6px;
     padding: 9px 16px 9px 10px;
@@ -321,7 +321,7 @@ body > .breadcrumbs {
 }
 
 .submit-row a:active {
-    color: #036;
+    color: #888;
 }
 
 .submit-row a.inactive, .submit-row a.active {
@@ -337,7 +337,7 @@ body > .breadcrumbs {
 }
 
 .submit-row a.inactive, .submit-row span.inactive {
-    color: #5B80B2;
+    color: #555;
     padding-right: 12px;
     padding-left: 12px;
     padding-bottom: 8px;
@@ -354,7 +354,7 @@ body > .breadcrumbs {
 
 .submit-row a.submit {
     color: #fff;
-    background: #BCD1E8 url(../img/default-bg.gif) repeat-x bottom;
+    background: #bbb url(../img/default-bg.gif) repeat-x bottom;
 
 
 /*    text-shadow: #BCD1E8 1px 1px 0;
@@ -362,7 +362,7 @@ body > .breadcrumbs {
 }
 
 .submit-row a.delete {
-    color: #CC3434;
+    color: #ccc;
 }
 
 /***/
@@ -380,7 +380,7 @@ body > ul > li.searchbar a:link,
 body > ul > li.searchbar a:active,
 body > ul > li.searchbar a:visited {
     text-decoration: none;
-    color: #5B80B2;
+    color: #555;
     background: none;
     margin: -6px 8px 0px -10px;
 }
@@ -398,7 +398,7 @@ body > ul > li.searchbar span.float-left a.inactive {
 body > ul > li.searchbar a.inactive {
     border: 1px solid #ccc;
     border-top: none;
-    color: #5B80B2;
+    color: #555;
     background: #fff url(../img/nav-bg.gif) repeat-x bottom;
 }
 
@@ -515,7 +515,7 @@ fieldset > .form-row:first-child {
 
 .form-row > select {
     -webkit-border-radius: 5px;
-    border: 1px solid #D9D9D9;
+    border: 1px solid #ddd;
     margin: 10px 0 0 0;
     padding: 12px 10px 10 12px;
     height: 40px;
@@ -532,7 +532,7 @@ fieldset > .form-row:first-child {
     height: 126px;
     background: none;
     -webkit-border-radius: 5px;
-    border: 1px solid #D9D9D9;
+    border: 1px solid #ddd;
 }
 
 .form-row label,
